@@ -3,9 +3,9 @@ Update: October 1, 2017
 
 ## Introduction
 
-This is the fourth of several labs that are part of the **Oracle Cloud DevOps: Cloud Native Microservices MySQL Workshop.** This workshop will walk you through the Software Development Lifecycle (SDLC) for a Cloud Native project that will create and use several microservices.
+This is the fourth of several labs that are part of the **Oracle Cloud DevOps: Cloud Native Microservices Workshop.** This workshop will walk you through the Software Development Lifecycle (SDLC) for a Cloud Native project that will create and use several microservices.
 
-In the first lab (100), the Project Manager created a new project in the Developer Cloud Service and also created and assigned tasks to the developers of this application. In the second lab (200), the Java developer created a new microservice to retrieve and filter Twitter data. In the third lab (300), the full stack developer created a microservice to extract data from the MySQL database. In this lab (400), you will assume the persona of the UI developer who will create a new generation product catalog UI that consumes REST services. This product catalog UI will combine both the Twitter Feed Microservice and the Product Catalog Microservice into a single unified view for the user.
+In the first lab (100), the Project Manager created a new project in the Developer Cloud Service and also created and assigned tasks to the developers of this application. In the second lab (200), the Java developer created a new microservice to retrieve and filter Twitter data. In the third lab (300), the full stack developer created a microservice to extract data from the database. In this lab (400), you will assume the persona of the UI developer who will create a new generation product catalog UI that consumes REST services. This product catalog UI will combine both the Twitter Feed Microservice and the Product Catalog Microservice into a single unified view for the user.
 
 **To log issues**, click here to go to the [github oracle](https://github.com/oracle/learning-library/issues/new) repository issue submission form.
 
@@ -171,7 +171,7 @@ Now that we have an automated build process, we will set up a deployment configu
 
   - **Job:** `Product Catalog UI Build`
 
-  - **Artifact:** `target/msdbw-mysqlmicroservice.zip`
+  - **Artifact:** `target/msdbw-microserviceui.zip`
 
     ![](images/400/Picture35.3.png)  
 
@@ -237,7 +237,7 @@ Now that we have our default application, we want to modify this application to 
 
     ![](images/400/image052.png)  
 
-- Brackets should open with the **ProductCatalogUI** folder already loaded.
+- Brackets should open with the **UI** folder already loaded.
 
     ![](images/400/image053.2.png)  
 
@@ -271,7 +271,7 @@ Now that we have our default application, we want to modify this application to 
 
 ### **STEP 10**: Edit the UI Code
 
-- First go back to Developer Cloud Service to obtain the URLs for the two microservices created in Labs 200 and 300.  Click on **Deploy** in the console, and then right click on the name **AlphaOfficeMySQLREST** to copy the URL for the microservice. Save this URL, as you will use it later. 
+- First go back to Developer Cloud Service to obtain the URLs for the two microservices created in Labs 200 and 300.  Click on **Deploy** in the console, and then right click on the name **AlphaOfficeREST** to copy the URL for the microservice. Save this URL, as you will use it later. 
 
     ![](images/400/image060.png)
 
@@ -284,7 +284,7 @@ Now that we have our default application, we want to modify this application to 
     ![](images/400/image062.1.png)
 
 
-- You will be putting the URLs of the two microservices into the code in order to access these services.  Paste the URL for the **AlphaOfficeMySQLREST** microservice as the value for the Javascript variable **dbServiceURL**. ***Note:*** You must append **/products** to the end of the URL you coppied and pasted. 
+- You will be putting the URLs of the two microservices into the code in order to access these services.  Paste the URL for the **AlphaOfficeREST** microservice as the value for the Javascript variable **dbServiceURL**. ***Note:*** You must append **/products** to the end of the URL you coppied and pasted. 
 
     ![](images/400/image062.2.png)
 

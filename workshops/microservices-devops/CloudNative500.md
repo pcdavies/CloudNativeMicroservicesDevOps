@@ -3,7 +3,7 @@ Update: October 1, 2017
 
 ## Introduction
 
-This is the Fifth of several labs that are part of the **Oracle DevOps and Cloud Native Microservices MySQL workshop**. This workshop will walk you through the Software Development Lifecycle (SDLC) for a Cloud Native project that will create and use several Microservices.
+This is the Fifth of several labs that are part of the **Oracle DevOps and Cloud Native Microservices workshop**. This workshop will walk you through the Software Development Lifecycle (SDLC) for a Cloud Native project that will create and use several Microservices.
 
 In this lab, Lisa Jones (The Project Manager) will complete the Sprint and view the Agile reports provided by the Oracle Developer Cloud Service
 
