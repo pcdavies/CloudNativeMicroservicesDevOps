@@ -64,7 +64,7 @@ Although you will login as a single user, you will take on 4 Personae during the
 
 Oracle Developer Cloud Service provides a complete development platform that streamlines team development processes and automates software delivery. The integrated platform includes an issue tracking system, agile development dashboards, code versioning and review platform, continuous integration and delivery automation, as well as team collaboration features such as wikis and live activity stream. With a rich web based dashboard and integration with popular development tools, Oracle Developer Cloud Service helps deliver better applications faster.
 
-- From the Cloud UI dashboard click on the **Developer** service. In our example, the Developer Cloud Service is named **developer#####**.
+- From the Cloud UI dashboard click on the **Developer** service. In our example, the Developer Cloud Service is named **developer98098**.
 
     ![](images/100/Picture100-6.png)
 

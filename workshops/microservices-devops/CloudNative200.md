@@ -1,4 +1,4 @@
-![](images/200/Picture-lab.png)  
+![](images/200/Picture-lab.png)
 Update: October 1, 2017
 
 ## Introduction
@@ -26,9 +26,9 @@ In the first lab (100), the Project Manager created a new project in the Develop
 
 ### **STEP 1**: Review Agile Board
 
-- This Lab assumes that you just completed Lab 100 and are still connected to the Oracle Cloud, that you're still in the Developer cloud Service Dashboard, and you're viewing the "Alpha Office Product Catalog Project". If for some reason that is not the case, follow the first several Steps of Lab 100 to once again view the Developer Cloud Service Console.
+- This Lab assumes that you just completed Lab 100 and are still connected to the Oracle Cloud, that you're still in the Developer cloud Service Dashboard, and you're viewing the "Alpha Office Product Catalog Project." If for some reason that is not the case, follow the first several Steps of Lab 100 to once again view the Developer Cloud Service Console.
 
-    ![](images/200/Picture10.5.png)  
+    ![](images/200/Picture10.5.png)
 
 - Although you will remain connected to the Oracle Cloud using the user account you were provided, you will take on the Persona of ***Bala Gupta*** as you perform the following steps.
 
@@ -82,7 +82,7 @@ To begin development on our Twitter feed microservices, we could start coding fr
 
 - You have now created a new GIT repository stored within the Developer Cloud Services that is based on an existing repository.
 
-    ![](images/200/Picture19.png)  
+    ![](images/200/Picture19.png)
 
 ## Create Default Build and Deployment Process
 
@@ -92,25 +92,25 @@ Now that we have the source code in the Developer Cloud Service managed GIT repo
 
 - On the left side navigation panel, click **Build** to access the build page and click **New Job**.
 
-    ![](images/200/Picture20.png)  
+    ![](images/200/Picture20.png)
 
 - In the New Job popup enter `Twitter Feed Build` for the Job Name, and then click **Save**.
 
-    ![](images/200/Picture21.png)  
+    ![](images/200/Picture21.png)
 
 - You are now placed into the job configuration screen.
 
-    ![](images/200/Picture22.png)  
+    ![](images/200/Picture22.png)
 
 - On the Main tab of the Configure Build screen change the **JDK** drop down to **JDK8**.
 
-    ![](images/200/Picture23.png)  
+    ![](images/200/Picture23.png)
 
 - Click the **Source Control** tab.
 
 - Click **Git** and select the **TwitterFeedMicroservice.git** from the drop down.
 
-    ![](images/200/Picture24.png)  
+    ![](images/200/Picture24.png)
 
 - Click the **Triggers** tab.
 
@@ -421,7 +421,7 @@ The Code we cloned locally contains the entire source necessary to filter the St
 
     ![](images/200/image089.png)  
 
-- Enter “**Feature2: Added Support for Filtering**” in the Commit Message box.
+- Enter `Feature2: Added Support for Filtering` in the Commit Message box.
 - If the changed files are not already identified as Staged Changes, **Drag and Drop** the **changed files** into the **Staged Changes** panel.
 - Click on **Commit and Push**. Note: it is possible to change the default Author and Committer to match the current “persona." However, for the sake of this lab guide, we will leave the defaults.  
 
