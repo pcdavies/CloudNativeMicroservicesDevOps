@@ -156,7 +156,7 @@ Now that we have the source code in our managed GIT repository, we need to creat
 
 - Return to the tab where your **Main Cloud Dashboard** window is loaded. If your dashboard Window is not available, simply open a tab and go to cloud.oracle.com, and re-login as previously instructed. **Note:** for those using a Trial account, this is will be your Standard Identity Cloud Service based account/dashboard.
 
-- Once the Oracle Public Cloud **Dashboard** is displayed, click on the  ![](images/200/PictureHamburger.png) menu in the lower left corner of the **Application Container** service card. Right-click **Open Service Console** and click **Open Link in New Tab**.
+- Once the Oracle Public Cloud **Dashboard** is displayed, click on the  <img src="images/200/PictureHamburger.png" class="infra"> menu in the lower left corner of the **Application Container** service card. Right-click **Open Service Console** and click **Open Link in New Tab**.
 
   ![](images/300/image127.png)  
 
