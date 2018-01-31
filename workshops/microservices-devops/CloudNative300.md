@@ -1,4 +1,4 @@
-# Continuous Integration of Database Microservices
+# Continuous Deployment of Database Microservices
 
 ![](images/300/PictureLab.png)  
 Update: Dec 7, 2017
@@ -140,6 +140,67 @@ Now that we have the source code in our managed GIT repository, we need to creat
 
     ![](images/300/Picture30.png)
 
+- From the **Build overview page**, once your build is complete, click the job title **Alpha REST Build** to view the details.
+
+    ![](images/300/image120.png)
+
+- From the build details page, in the **Artifacts of Last Successful Build** region, click the triangle next to the **target** link to expand the artifacts. Then click the **msdbw-microservice.zip** link to download the built microservice.
+
+    ![](images/300/image121.png)
+
+- Now we are ready to use the **Application Container Cloud Service** to deploy the application.
+
+## Deploy the Microservice
+
+### **STEP 5**: Deploy to Applcation Container Cloud Service
+
+- Return to the tab where your **Main Cloud Dashboard** window is loaded. If your dashboard Window is not available, simply open a tab and go to cloud.oracle.com, and re-login as previously instructed. **Note:** for those using a Trial account, this is will be your Standard Identity Cloud Service based account/dashboard.
+
+
+- Once the Oracle Public Cloud **Dashboard** is displayed, click on the  ![](images/200/PictureHamburger.png) menu in the upper left and select **Application Container** service.
+
+    ![](images/200/Picture43.1.png)  
+
+- From the service console, click **Create Application**.
+
+    ![](images/200/image142.png)
+
+- From the application platform list, click **Node**.
+
+    ![](images/300/image122.png)
+
+- In the **name** field, type `AlphaOfficeREST`.
+
+    ![](images/300/image123.png)
+
+- Next to the **Upload Archive** radio button, click **Choose File**. Choose the `msdbw-microservice.zip` file that you downloaded in the previous step and click **open**.
+
+    ![](images/300/image124.png)
+
+- In the **Instances** and **Memory (GB)** fields, click the down arrow to reduce both values to **1**. Then click **Create**.
+
+    ![](images/300/image125.png)
+
+- The zip archive will be uploaded to the service, expanded into a Docker container, and started up using the commands outlined by our build process. The process will take a couple of minutes. After the process is finished, you will see the URL of your running microservice displayed on the console. You may need to refresh the page to see the updated status.
+
+    ![](images/300/image126.png)
+
+
+## Verify REST Microservice deployment
+
+### **STEP 6**: Test REST services
+
+- To launch the application after the deployment is complete, click the **URL** listed in the AlphaOfficeREST application details.
+
+    ![](images/300/image126.png)  
+
+- A new tab in the browser should open with application running.
+
+    ![](images/300/Picture42.png)  
+
+- Now lets test out the **products** REST call.  Append **/products** to the end of the URL and hit **enter**.  All of the Alpha Office products should be returned in a JSON payload.
+
+    ![](images/300/Picture43.3.png)
 
 ### **STEP 7**: Complete Task
 
