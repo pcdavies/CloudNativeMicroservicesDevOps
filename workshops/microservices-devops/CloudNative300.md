@@ -1,4 +1,4 @@
-# Continuous Delivery of Database Microservices
+# Continuous Integration of Database Microservices
 
 ![](images/300/PictureLab.png)  
 Update: Dec 7, 2017
@@ -15,7 +15,7 @@ In the first lab (100), the Project Manager created a new project in the Develop
 
 - Access Developer Cloud Service
 - Import Code from external Git Repository
-- Build and Deploy project using Developer Cloud Service and Oracle Application Container Cloud Service
+- Build project using Developer Cloud Service
 
 ## Required Artifacts
 
@@ -79,7 +79,7 @@ To begin development on our Catalog REST microservices, we could start coding fr
 
     ![](images/300/Picture19.2.png)  
 
-## Create Default Build and Deployment Process
+## Create Default Build Process
 
 ### **STEP 4**: Create Default Build Process
 
@@ -121,7 +121,7 @@ Now that we have the source code in our managed GIT repository, we need to creat
   - Check **Archive the artifacts**.
   - Enter `**/target/*` for **Files to Archive**.  
   - Verify **GZIP** in the Compression Type.
-  
+
     ![](images/300/Picture28.3.png)  
 
 - Click **Save** to complete the configuration.
@@ -140,86 +140,10 @@ Now that we have the source code in our managed GIT repository, we need to creat
 
     ![](images/300/Picture30.png)
 
-### **STEP 5**: Create Default Deployment Process
-
-Now that we have an automated build process, we will setup up a deployment configuration that will push out build artifacts to a node.js environment running on Application Container Cloud Service whenever a successful build occurs.
-
-- On the navigation panel click **Deploy** to access the Deployment page. Click **New Configuration**.
-
-- Enter the following data:
-
-  **Configuration Name**: `DeployREST`
-
-  **Application Name**: `AlphaOfficeREST`
-
-    ![](images/300/Picture32.3.png)  
-
-- Click on **Deployment Target** drop down and select deployment defined in lab 200.
-
-    ![](images/300/Picture33.png)  
-
-- In Deployment window, click **Test Connection**. If Successful, click **Use Connection**:
-
-    ![](images/300/Picture34.3.png)  
-
-- Set the following Properties as follows:
-
-  - **Runtime**: `Node`
-
-  - **Subscription**: `Hourly`
-
-  - **Type:** `Automatic` and `Deploy stable builds only`
-
-  - **Job:** `Alpha REST Build`
-
-  - **Artifact:** `target/msdbw-microservice.zip`
-
-    ![](images/300/Picture36.png)  
-
-- To reduce the number of resources that are used, we will modify the default deployment of 2 instances. Click Include ACCS Deployment and enter the following in the text box:
-
-```
-{
-  "memory": "1G",
-  "instances": "1"
-}
-```
-![](images/300/Picture36.3.png)  
-
-- Click **Save**
-
-    ![](images/200/Picture36.2.png)  
-
-- Click the gear drop down for **AlphaOfficeREST** and select **Start**
-
-    ![](images/300/Picture37.3.png)  
-
-- Wait until the message **Starting application** changes to **Last deployment succeeded**
-
-    ![](images/300/Picture38.2.png)  
-
-    ![](images/300/Picture38.4.png)  
-
-## Verify REST Microservice deployment
-
-### **STEP 6**: Test REST services
-
-- We are able to access the application directly from Developer Cloud Service. Click **AlphaOfficeREST** to launch the application.
-
-    ![](images/300/Picture39.3.png)  
-
-- A new tab in the browser should open with application running.
-
-    ![](images/300/Picture42.png)  
-
-- Now lets test out the **products** REST call.  Append **/products** to the end of the URL and hit **enter**.  All of the Alpha Office products should be returned in a JSON payload. 
-
-    ![](images/300/Picture43.3.png)
- 
 
 ### **STEP 7**: Complete Task
 
-We have now verified that the REST microservice has been deployed and functions properly. To finish up this lab, we will mark the Issue as completed in the Sprint.
+We have now automated the build process of the REST microservice. To finish up this lab, we will mark the Issue as completed in the Sprint.
 
 - Back in the Developer Cloud Service window, click **Agile**, followed by clicking **Active Sprints**.
 
@@ -246,4 +170,3 @@ We have now verified that the REST microservice has been deployed and functions 
 
 
 - **You are now done with this lab.**
-
