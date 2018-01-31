@@ -134,7 +134,7 @@ Now that we have the source code in our managed GIT repository, we need to creat
 
     ![](images/300/Picture29.png)  
 
-  **NOTE:** Once the build begins, it should take about approximately 1 to 2 minutes for the build to complete. Once complete, you will be able to see the number of successful test runs in the Test Result Trend section. ***Wait for the build to complete before continuing to the next step***, as we need the build artifact to complete the deployment configuration.
+  **NOTE:** Once the build begins, it should take about approximately 1 to 2 minutes for the build to complete. Once complete, you will be able to see the number of successful test runs in the Test Result Trend section. ***Wait for the build to complete before continuing to the next step***, as we need the build artifact to complete the deployment in the next step.
 
 - After the build begins, you can also click on the **Console Icon** ![](images/300/Picture29.1.png) to monitor the build log details.
 
