@@ -422,10 +422,13 @@ In the following steps “Lisa” will merge the branch create by “Bala” int
 
 - Return to the tab where your **Main Cloud Dashboard** window is loaded. If your dashboard Window is not available, simply open a tab and go to cloud.oracle.com, and re-login as previously instructed. **Note:** for those using a Trial account, this is will be your Standard Identity Cloud Service based account/dashboard.
 
+- Once the Oracle Public Cloud **Dashboard** is displayed, click on the  <img src="images/200/PictureHamburger.png" class="infra"> menu in the lower left corner of the **Application Container** service card. Right-click **Open Service Console** and click **Open Link in New Tab**.
 
-- Once the Oracle Public Cloud **Dashboard** is displayed, click on the  ![](images/200/PictureHamburger.png) menu in the upper left and select **Application Container** service.
+  ![](images/300/image127.png)  
 
-    ![](images/200/Picture43.1.png)  
+**NOTE**: If the **Application Container** card is not displayed, you can add it to your dashboard by clicking **Customize Dashboard**, scrolling to **Application Container**, and clicking **Show**. Then open the service console by following the previous instruction.
+
+  ![](images/300/image128.png)
 
 - From the service console, click **Create Application**.
 
