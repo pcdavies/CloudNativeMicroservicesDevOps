@@ -209,7 +209,7 @@ Now that we have our application build process configured, we want to modify thi
 
 ### **STEP 8**: Edit the UI Code
 
-- Now go back to Application Container Cloud Service to obtain the URLs for the two microservices created in Labs 200 and 300. From the **Application Container service console**, right click on the **AlphaOfficeREST URL** to copy it. Save this URL, as you will use it later.
+- Now go back to Application Container Cloud Service to obtain the URLs for the two microservices created in Labs 200 and 300. From the **Application Container service console**, right click on the **AlphaOfficeREST URL** to copy it. Save this URL, as you will use it later. Also copy and save the URL for the **JavaTwitterMicroservice**
 
     ![](images/400/image060.png)
 
