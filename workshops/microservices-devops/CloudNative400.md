@@ -277,7 +277,7 @@ Now that we have our application build process configured, we want to modify thi
 
     ![](images/400/image063.9.png)
 
-### **STEP 10**: Deploy the Product Catalog UI with Edited Code
+### **STEP 10**: Deploy and Test the Product Catalog UI with Edited Code
 
 - Return to the Developer Cloud Service, and click on the **Build** menu option.
 
@@ -323,7 +323,7 @@ Now that we have our application build process configured, we want to modify thi
 
    ![](images/400/Picture63.png)
 
-### **STEP 13**: Complete Task
+### **STEP 11**: Complete Task
 
 We have now verified that the Product Catalog UI has been deployed and functions properly. To complete this lab, we will mark the Issue as completed in the Sprint.
 
