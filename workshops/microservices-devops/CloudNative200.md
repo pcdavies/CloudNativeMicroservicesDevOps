@@ -152,7 +152,7 @@ Now that we have the source code in the Developer Cloud Service managed GIT repo
     ![](images/200/Picture30.png)  
 
 
-### **STEP 6**: Complete Task
+### **STEP 5**: Complete Task
 
 We have now successfully built the Java Twitter Microservice from source code. To finish up this part of the lab, we will mark the Issue as completed in the Sprint.
 
@@ -185,7 +185,7 @@ Now that we have completed the import and build of our initial static twitter mi
 
 ## Clone Project to Eclipse IDE
 
-### **STEP 7**: Load Eclipse IDE
+### **STEP 6**: Load Eclipse IDE
 
 In the following task we will provide screen shots taken from the optional compute image provided with the workshop. If you are using Eclipse and Brackets on your local hardware, your screens may vary slightly.
 
@@ -195,7 +195,7 @@ In the following task we will provide screen shots taken from the optional compu
 
     ![](images/200/Picture50.png)  
 
-### **STEP 8**: Create connection to Oracle Developer Cloud Service
+### **STEP 7**: Create connection to Oracle Developer Cloud Service
 
 - We will now create a connection to the Developer Cloud Service. To do this, first click on the menu options **Window -> Show View ->Other**  
 
@@ -230,7 +230,7 @@ In the following task we will provide screen shots taken from the optional compu
 
     ![](images/200/Picture57.png)  
 
-### **STEP 9**: Create a local clone of the repository
+### **STEP 8**: Create a local clone of the repository
 
 - **Expand Developer**, and then **double click** on **Alpha Office Product Catalog** project to activate the project.
 
@@ -265,7 +265,7 @@ In the following task we will provide screen shots taken from the optional compu
     ![](images/200/Picture59.6.png)  
 
 
-### **STEP 10**: Set Feature 2 Status to In Progress
+### **STEP 9**: Set Feature 2 Status to In Progress
 
 In the previous steps we updated the status of the Tasks assigned to "Bala Gupta" using the web interface to the Developer Cloud Service. In this step we will use the Eclipse connection to the Developer Cloud Service to update the status of Bala’s tasks.
 
@@ -285,7 +285,7 @@ In the previous steps we updated the status of the Tasks assigned to "Bala Gupta
 
 The Code we cloned locally contains the entire source necessary to filter the Static Twitter Feed. In this section of the lab, we will un-comment the code and test the filter.
 
-### **STEP 11**: Add Filter
+### **STEP 10**: Add Filter
 
 - In the Project Explorer, **expand** the **TwitterFeedMicroservice > src/main/java > com.example** and **double click** on **StaticTweets.java** to open the source code.
 
@@ -313,7 +313,7 @@ The Code we cloned locally contains the entire source necessary to filter the St
 
 ## Create Branch and Merge Request
 
-### **STEP 12**: Create Branch
+### **STEP 11**: Create Branch
 
 - right click on **TwitterFeedMicroservice** and select **Team > Switch To > New Branch**
 
@@ -337,7 +337,7 @@ The Code we cloned locally contains the entire source necessary to filter the St
 - Click on the **Finish button** in the Push Confirmation dialog
 - Click on **Ok** in Push Result dialog
 
-### **STEP 13**: Create Merge Request
+### **STEP 12**: Create Merge Request
 
 - Return to the Developer Cloud Service Dashboard in the browser.  If the session has timed out you may have to navigate to it again. On navigation panel click **Code**, select the **Feature2** branch. Notice the changes. Click on the **Src** folder to view the changes commited to the branch from Eclipse.
 
@@ -378,7 +378,7 @@ The Code we cloned locally contains the entire source necessary to filter the St
 
 In the following steps “Lisa” will merge the branch create by “Bala” into the master.
 
-### **STEP 14**: Merge Requests
+### **STEP 13**: Merge Requests
 
 ![](images/lisa.png)  
 
@@ -418,7 +418,7 @@ In the following steps “Lisa” will merge the branch create by “Bala” int
 
 ## Deploy Test the JavaTwitterMicroservice in the Cloud
 
-### **STEP 15**: Deploy Microserice
+### **STEP 14**: Deploy Microserice
 
 - Return to the tab where your **Main Cloud Dashboard** window is loaded. If your dashboard Window is not available, simply open a tab and go to cloud.oracle.com, and re-login as previously instructed. **Note:** for those using a Trial account, this is will be your Standard Identity Cloud Service based account/dashboard.
 
@@ -454,7 +454,7 @@ In the following steps “Lisa” will merge the branch create by “Bala” int
 
     ![](images/200/image147.png)
 
-### **STEP 16**: Test Microservice
+### **STEP 15**: Test Microservice
 
 - Once the Deploy completes Successfully, click on the JavaTwitterMicroservice **URL**
 
