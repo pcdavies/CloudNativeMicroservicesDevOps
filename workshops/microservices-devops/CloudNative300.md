@@ -152,7 +152,7 @@ Now that we have the source code in our managed GIT repository, we need to creat
 
 ## Deploy the Microservice
 
-### **STEP 5**: Deploy to Applcation Container Cloud Service
+### **STEP 5**: Deploy to Application Container Cloud Service
 
 - Return to the tab where your **Main Cloud Dashboard** window is loaded. If your dashboard Window is not available, simply open a tab and go to cloud.oracle.com, and re-login as previously instructed. **Note:** for those using a Trial account, this is will be your Standard Identity Cloud Service based account/dashboard.
 
