@@ -4,7 +4,7 @@
 ![](images/studentguide/Picture-Title.png)
 Update: December 7, 2017
 
-# DevOps and Cloud Native Microservices Workshop
+## Workshop Introduction
 
 This Oracle Public Cloud DevOps and Cloud Native Microservices workshop will walk you through the Software Development Lifecycle (SDLC) for a Cloud Native project, during which you will create and use several Microservices. During this workshop you will take on the role of 4 personae. As the first persona - the Project Manager - you will create the projects, add tasks and features to be worked on, and assign tasks to developers.  The Project Manager will then start the initial sprint. The Java Developer persona will develop a new twitter feed microservice that will allow for retrieval and filtering of twitter data. The Full Stack Developer persona will develop a new database microservice that allows access to the product catalog data. The JavaScript Developer persona will make enhancements to the Product Catalog UI that will display the twitter data related to a select catalog item.  During the workshop, you will get exposure to Oracle Developer Cloud Service and Oracle Application Container Cloud Service.
 
@@ -14,29 +14,20 @@ This Oracle Public Cloud DevOps and Cloud Native Microservices workshop will wal
 
 - To log issues and view the Lab Guide source, go to the [github oracle](https://github.com/oracle/learning-library/issues/new) repository.
 
-- Visit the [Workshop Interactive Labguide](https://launch.oracle.com/?microservices-devops) for a visual overview of the workshop content. 
+- Visit the [Workshop Interactive Labguide](https://launch.oracle.com/?microservices-devops) for a visual overview of the workshop content.
 
 - All setup steps and lab replays have been posted on [youtube](https://www.youtube.com/playlist?list=PLPIzp-E1msrY6J_zl7Iv36dteSutyDpV4). You can **watch the videos** to gain an overview of the workshop and what's required to successfully complete the labs.
 
-## Overview of Tasks
+# Workshop Prerequisites
 
-You will need to **complete the following 4 Tasks** prior to attempting the Labs contained in this workshop
-
-- **Acquire an Oracle Cloud Trial Account**
-- **Configure Oracle Cloud Identity Information**
-- **Install the required open source tools locally on your computer (e.g. Eclipse, Maven, Git, and Brackets)**
-- **Read the Workshop Lab Overview**
-
-# Acquire an Oracle Cloud Trial Account
+## _Acquire an Oracle Cloud Trial Account_
 
 ### **Step 1**: Getting your Trial Account
 
 - Click on this URL [cloud.oracle.com/tryit](http://cloud.oracle.com/tryit&intcmp=DeveloperInnovation-HOL-11NOV17), and complete all the required steps to get your free Oracle Cloud Trial Account.
 - You must wait to receive our account before continuing to the "**Configure Oracle Cloud Identity Information**" Section.
 
-# Configure Oracle Cloud Identity Information
-
-## Login to your Oracle Cloud Account
+## _Configure Oracle Cloud Identity Information_
 
 ### **Step 2**: Record information from the welcome email and login
 
@@ -183,10 +174,9 @@ It is important to fully understand how to login to both the **Standard Identity
 
     ![](images/studentguide/Picture204.9.png)
 
+## _Install Open Source Tools_
 
-# Install the Open Source Tools
-
-## Verify your version of the Java JDK
+## Java JDK
 
 ### **Step 6 (Windows Option)**: JDK Verification on Windows
 
@@ -207,7 +197,7 @@ Java HotSpot(TM) Client VM (build 25.121-b13, mixed mode, sharing)
 
 **Note**: Eclipse requires that you have the a Java **JDK** 8 installed. Even if you have a **JRE** version 8, you still need to verify that you have a JDK 8 installed.
 
-- Open Terminal window and execute the following command: 
+- Open Terminal window and execute the following command:
 
 ```
 ls /Library/java/JavaVirtualMachines/
@@ -215,7 +205,7 @@ ls /Library/java/JavaVirtualMachines/
 
 - If you do not have a JDK 1.8 folder, you will need to download the [JDK 8](http://www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151.html) from the Oracle Technology Network website, and install.
 
-## Download and Install Eclipse
+## Eclipse
 
 ### **Step 7**: Download Eclipse
 
@@ -257,14 +247,14 @@ If you are running Eclipse behind a firewall, you need to configure the proxy se
 
 ***Note:*** You will only do this optional Eclipse/Maven Proxy setup if you are behind a firewall. Otherwise, skip this step, and go to next step where you will download and install Brackets.
 
-- From the **Eclipse > Preference or Window > Preferences** panel, type **Maven** into the search box. 
+- From the **Eclipse > Preference or Window > Preferences** panel, type **Maven** into the search box.
 - Click on the Maven **User Settings**. Make note of the directory where the settings.xml file is to be located. In the example below, the Maven User Settings will be located in the **/home/oracle/.m2** directory
 
     ![](images/studentguide/Picture7.png)
 
 - **Cancel** out of the Maven dialog, and **Close** Eclipse
 
-- If the directory does not exist where the settings.xml file is to be located, **create the directory**. In this example, we will create the **.m2** directory. 
+- If the directory does not exist where the settings.xml file is to be located, **create the directory**. In this example, we will create the **.m2** directory.
 
 - Also, create the **settings.xml** file, if it does not exist. Add the following to the settings.xml file (NOTE: you will need to use your correct **Host, Port, nonProxyHosts, username and Password settings**):
 
@@ -297,7 +287,7 @@ xsi:schemaLocation="http://maven.apache.org/SETTINGS/1.1.0 http://maven.apache.o
 
 - Reload Eclipse to use the new maven settings
 
-## Download and Install Git and Brackets
+## Git and Brackets
 
 ### **Step 10**: Download/Install Git
 
@@ -367,7 +357,7 @@ xsi:schemaLocation="http://maven.apache.org/SETTINGS/1.1.0 http://maven.apache.o
 
 - You can now ready to start on [Lab 100](CloudNative100.md) Lab
 
-# Workshop Details
+# Workshop Objectives
 
 ## Lab 100: Agile Project Management
 
