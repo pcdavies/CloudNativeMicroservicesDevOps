@@ -4,6 +4,20 @@
 ![](images/studentguide/Picture-Title.png)
 Update: December 7, 2017
 
+# DevOps and Cloud Native Microservices Workshop Description
+
+This Oracle Public Cloud DevOps and Cloud Native Microservices workshop will walk you through the Software Development Lifecycle (SDLC) for a Cloud Native project, during which you will create and use several Microservices. During this workshop you will take on the role of 4 personae. As the first persona - the Project Manager - you will create the projects, add tasks and features to be worked on, and assign tasks to developers.  The Project Manager will then start the initial sprint. The Java Developer persona will develop a new twitter feed microservice that will allow for retrieval and filtering of twitter data. The Full Stack Developer persona will develop a new database microservice that allows access to the product catalog data. The JavaScript Developer persona will make enhancements to the Product Catalog UI that will display the twitter data related to a select catalog item.  During the workshop, you will get exposure to Oracle Developer Cloud Service and Oracle Application Container Cloud Service.
+
+- You can see a list of Lab Guides by clicking on the **Menu Icon**
+
+    ![](images/WorkshopMenu.png)
+
+- To log issues and view the Lab Guide source, go to the [github oracle](https://github.com/oracle/learning-library/issues/new) repository.
+
+- Visit the [Workshop Interactive Labguide](https://launch.oracle.com/?microservices-devops) for a visual overview of the workshop content. 
+
+- All setup steps and lab replays have been posted on [youtube](https://www.youtube.com/playlist?list=PLPIzp-E1msrY6J_zl7Iv36dteSutyDpV4). You can **watch the videos** to gain an overview of the workshop and what's required to successfully complete the labs.
+
 ## Overview of Tasks
 
 You will need to **complete the following 4 Tasks** prior to attempting the Labs contained in this workshop
@@ -11,7 +25,7 @@ You will need to **complete the following 4 Tasks** prior to attempting the Labs
 - **Acquire an Oracle Cloud Trial Account**
 - **Configure Oracle Cloud Identity Information**
 - **Install the required open source tools locally on your computer (e.g. Eclipse, Maven, Git, and Brackets)**
-- **Read the Workshop Overview**
+- **Read the Workshop Lab Overview**
 
 # Acquire an Oracle Cloud Trial Account
 
@@ -353,23 +367,7 @@ xsi:schemaLocation="http://maven.apache.org/SETTINGS/1.1.0 http://maven.apache.o
 
 - You can now ready to start on [Lab 100](CloudNative100.md) Lab
 
-# Workshop Overview
-
-- You can see a list of Lab Guides at any time by clicking on the **Menu Icon**
-
-    ![](images/WorkshopMenu.png)
-
-- To log issues and view the Lab Guide source, go to the [github oracle](https://github.com/oracle/learning-library/issues/new) repository.
-
-- Visit the [Workshop Interactive Labguide](https://launch.oracle.com/?microservices-devops) for a visual overview of the workshop content. 
-
-- **Step #3**: All setup steps and lab replays have been posted on [youtube](https://www.youtube.com/playlist?list=PLPIzp-E1msrY6J_zl7Iv36dteSutyDpV4). You can **watch the videos** to gain an overview of the workshop and what's required to successfully complete the labs.
-
-## DevOps and Cloud Native Microservices Workshop Description
-
-This Oracle Public Cloud DevOps and Cloud Native Microservices workshop will walk you through the Software Development Lifecycle (SDLC) for a Cloud Native project, during which you will create and use several Microservices. During this workshop you will take on the role of 4 personae. As the first persona - the Project Manager - you will create the projects, add tasks and features to be worked on, and assign tasks to developers.  The Project Manager will then start the initial sprint. The Java Developer persona will develop a new twitter feed microservice that will allow for retrieval and filtering of twitter data. The Full Stack Developer persona will develop a new database microservice that allows access to the product catalog data. The JavaScript Developer persona will make enhancements to the Product Catalog UI that will display the twitter data related to a select catalog item.  During the workshop, you will get exposure to Oracle Developer Cloud Service and Oracle Application Container Cloud Service.
-
-## Workshop Details
+# Workshop Details
 
 ## Lab 100: Agile Project Management
 
