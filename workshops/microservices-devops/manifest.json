@@ -73,8 +73,8 @@
             },
             {
                 "number": "0",
-                "filename": "README.md",
-                "title": "README First",
+                "filename": "InstructorOverview.md",
+                "title": "Workshop Overview",
                 "description": "Step-by-step workshop instructions",
                 "labels": {
                     "version": "Instructor Led"
