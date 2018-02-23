@@ -6,14 +6,14 @@
         "interactive":"https://launch.oracle.com/?microservices-devops",
         "versions": [
             {
+                "name": "Self-Service",
+                "description": "Individual self-guided learning using a Trial Account",
+                "imageUrl": "images/Self-Service.png"
+            },  
+            {
               "name": "Instructor Led",
               "description": "An in-person workshop using an Instructor Provided Environment",
               "imageUrl": "images/Instructor Led.png"
-            },
-            {
-              "name": "Self-Service",
-              "description": "Individual self-guided learning using a Trial Account",
-              "imageUrl": "images/Self-Service.png"
             }
           ],
         "labs": [
