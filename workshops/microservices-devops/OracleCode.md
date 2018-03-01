@@ -17,8 +17,10 @@ This Oracle Public Cloud DevOps and Cloud Native Microservices workshop will wal
 
 ### **Step 1**: Getting your Trial Account
 
-- Click on this URL [cloud.oracle.com/tryit](http://cloud.oracle.com/tryit&intcmp=DeveloperInnovation-HOL-11NOV17), and complete all the required steps to get your free Oracle Cloud Trial Account.
-- You must wait to receive our account before continuing to the "**Configure Oracle Cloud Identity Information**" Section.
+- If you do not have a trail account please click on this URL [cloud.oracle.com/tryit](http://cloud.oracle.com/tryit&intcmp=DeveloperInnovation-HOL-11NOV17), and complete all the required steps to get your free Oracle Cloud Trial Account.
+- You will need to wait until you receive the following email before proceeding to the next step.
+
+![](images/oraclecode/code_9.png)
 
 ## _Record Information, Configure Storage and Connect to the Cloud_
 
@@ -190,6 +192,10 @@ To provide the best possible experience during your time at Oracle Code your ins
 - Enter your VNC Host password into the VNC Viewer prompt and press enter.
 
 ![](images/oraclecode/code_5.png)
+
+- You receive the unecrypted connection message below, please check the box and press continue.
+
+![](images/oraclecode/code_8.png)
 
 - You can now begin Lab 100. Please click on the Hamburger icon at the top of the page, then select Lab 100.
 
