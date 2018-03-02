@@ -222,7 +222,7 @@ To provide the best possible experience during your time at Oracle Code your ins
 - Create Issues for Database Microservice
 - Create Issues for Product Catalog UI enhancements
 - Create Agile Board and initial Sprint
-- Add Issues to Sprint
+- Add Issues to Sprint 
 
 ## Lab 200: Continuous Delivery of Java Microservices
 
