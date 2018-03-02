@@ -18,9 +18,9 @@ This Oracle Public Cloud DevOps and Cloud Native Microservices workshop will wal
 ### **Step 1**: Getting your Trial Account
 
 - If you do not have a trail account please click on this URL [cloud.oracle.com/tryit](http://cloud.oracle.com/tryit&intcmp=DeveloperInnovation-HOL-11NOV17), and complete all the required steps to get your free Oracle Cloud Trial Account.
-- You will need to wait until you receive the following email before proceeding to the next step.
-
+- You will need to wait until you receive the following email before proceeding to the next step. 
 ![](images/oraclecode/code_9.png)
+_Please note that this email may arrive in your spam or promotions folder pending your email settings._
 
 ## _Record Information, Configure Storage and Connect to the Cloud_
 
@@ -206,63 +206,3 @@ To provide the best possible experience during your time at Oracle Code your ins
 
 
 
-
-
-## Workshop Outline
-
-## Lab 100: Agile Project Management
-
-**Documentation**: [CloudNative100.md](CloudNative100.md)
-
-### Objectives
-
-- Create Initial Project
-- Create Product Issues
-- Create Issues for Twitter Feed Microservice
-- Create Issues for Database Microservice
-- Create Issues for Product Catalog UI enhancements
-- Create Agile Board and initial Sprint
-- Add Issues to Sprint 
-
-## Lab 200: Continuous Delivery of Java Microservices
-
-**Documentation**: [CloudNative200.md](CloudNative200.md)
-
-### Objectives
-
-- Access Developer Cloud Service
-- Import Code from external Git Repository
-- Import Project into Eclipse
-- Build and Deploy project using Developer Cloud Service and Oracle Application Container Cloud Service
-
-## Lab 300: Continuous Delivery of Database Microservices
-
-**Documentation**: [CloudNativeMy300.md](CloudNative300.md)
-
-### Objectives
-
-- Access Developer Cloud Service
-- Import Code from external Git Repository
-- Build and Deploy project using Developer Cloud Service and Oracle Application Container Cloud Service
-
-## Lab 400: Cloud Native Rapid JavaScript Development with node.js
-
-**Documentation**: [CloudNative400.md](CloudNative400.md)
-
-### Objectives
-
-- Access Developer Cloud Service
-- Import Code from external Git Repository
-- Import Project into Brackets
-- Build and Deploy project using Developer Cloud Service and Oracle Application Container Cloud Service
-
-## Lab 500:  Oracle Developer Cloud Service Administration
-
-**Documentation**: [CloudNative500.md](CloudNative500.md)
-
-### Objectives
-
-- Access Developer Cloud Service
-- Complete Sprint
-- Run Backlog and Sprint Reports
-- Review Administrative Tasks
