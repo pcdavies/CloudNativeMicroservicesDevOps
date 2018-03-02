@@ -1,4 +1,3 @@
-
 # Trial Account Student Guide
 
 ![](images/studentguide/Picture-Title.png)
