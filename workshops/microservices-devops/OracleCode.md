@@ -1,4 +1,4 @@
-# DevOps and Cloud Native Microservices Workshop Overview
+# DevOps and Cloud Native Microservices Workshop Overview 
 
 ![](images/studentguide/Picture-Title.png)
 Update: March 1, 2017
