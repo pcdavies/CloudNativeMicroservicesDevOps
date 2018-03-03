@@ -114,7 +114,7 @@ Some services that we will use in this workshop require that your account's Repl
 
     ![](images/studentguide/Picture204.png)
 
-### **Step 5**: Set the Traditional Account Password
+### **Step 5**: Log into the Traditional Account and set the Password
 
 We will now set the Password for the **Traditional Account** User. This Account will allow you to access the **Developer Cloud Service**.
 
