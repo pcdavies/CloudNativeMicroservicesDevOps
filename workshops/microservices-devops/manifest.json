@@ -33,7 +33,7 @@
             },
             {
                 "number": "100",
-                "filename": "CloudNative100.md",
+                "filename": "CloudNative100SelfService.md",
                 "title": "Lab 100: Agile Project Management",
                 "description": "Use Developer Cloud Service to create issues, tasks, and sprints",
                 "labels": {
