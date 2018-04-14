@@ -32,7 +32,7 @@ Although you will login as a single user, you will take on 4 Personae during the
 
 ### **STEP 1**: Login to your **Traditional** Oracle Cloud Account
 
-- From any browser, go to the URL below, or if using a trial account, use the URL emailed to you in your confirmation email:
+- If you are not already signed into the Oracle Cloud Dashboard, then from any browser go to the URL below:
 
     `https://cloud.oracle.com`
 
@@ -40,45 +40,62 @@ Although you will login as a single user, you will take on 4 Personae during the
 
     ![](images/100/Picture100-1.png)
 
-- **IMPORTANT** - Under my services, select from the drop down list the correct data center and click on **My Services**. If you are unsure of the data center you should select, and this is an in-person training event, ***ask your instructor*** which **Region** to select from the drop down list. If you received your account through an ***Oracle Trial***, you should have recorded the needed information while following the instruction in the [Trial Account Student Guide](StudentGuide.md).
+- Select **Cloud Account with Identity Cloud Service** from the drop down, enter your **Cloud Account Name** recorded in your welcome email and described in the **Trial Account Setup Guide**. Click on the **My Services** button.
 
-    ![](images/100/Picture100-2.png)
+    ![](images/100/SelfServ01.png)
 
-- Enter your identity domain and click **Go**.
-
-    ![](images/100/Picture100-3.png)
-
-- Once your Identity Domain is set, enter your User Name and Password and click **Sign In** 
 
   **NOTE:** For this lab you will assume the role of Project Manager ***Lisa Jones***. Although you are assuming the identity of Lisa Jones, you will log into the account using the **username** provided to you by your instructor, given to you by your corporation, or supplied to you as part of an Oracle Trial. As you progress through the workshop, you will remain logged in as a single user, but you will make “logical User" changes from Lisa Jones the Project Manager to other personas.
 
     ![](images/lisa.png)
 
-    ![](images/100/Picture100-3.5.png)
+- Since you Customized your Dashboard as part of the **Trial Account Setup Guide**, your dashboard should display the following services:
 
-- You will be presented with a Dashboard displaying the various cloud services available to this account.
+    ![](images/100/SelfServ01.1.png)
 
-    ![](images/100/Picture100-4.png)
-
-- **Click** on the **Customize Dashboard** to add services to the dashboard. Services are added by selecting **Show.** For this workshop, you will want to ensure that you are showing **Developer cloud** service. 
-
-    ![](images/100/Picture100-5.png)
-
-### **STEP 2**: Login to Developer Cloud Service
+### **STEP 2**: Login and Configure the Developer Cloud Service
 
 Oracle Developer Cloud Service provides a complete development platform that streamlines team development processes and automates software delivery. The integrated platform includes an issue tracking system, agile development dashboards, code versioning and review platform, continuous integration and delivery automation, as well as team collaboration features such as wikis and live activity stream. With a rich web based dashboard and integration with popular development tools, Oracle Developer Cloud Service helps deliver better applications faster.
 
-- From the Cloud UI dashboard click on the **Developer** service Hamburger menu, and then **Right Click** on **Open Service Console**, and open the console in a new tab. This will keep the Dashboard loaded on another tab.
+- From the Cloud UI dashboard, **Right Click** on the **Developer** service, then open the Service in a new tab. This will keep the Dashboard loaded on another tab.
 
-    ![](images/100/Picture100-6.png)
+    ![](images/100/SelfServ13.png)
 
-- If you receive an error while loading the Console, return to the dashboard and ensure you follow the previous tasks instructions to "Open Service Console." 
+- The first time you attempt to load the Developer Cloud Service, the following will be displayed. Click on the **Go to Console** button.
+
+    ![](images/100/SelfServ05.png)
+
+- You will now need to create an **Instance** on which the Developer Cloud Service will run. Click on the **Create Instance** button.
+
+    ![](images/100/SelfServ06.png)
+
+- Enter `DevCS` for the **Instance Name** and `DevCS Instance` for the **Description**, then click on **Next**.
+
+    ![](images/100/SelfServ07.png)
+
+- Click **Next** on the Service Details Page.
+
+- Click **Create** to create the DevCS Instance.
+
+    ![](images/100/SelfServ08.png)
+
+- The **DevCS** instance will show a Status of **Creating service...** for several minutes.
+
+    ![](images/100/SelfServ09.png)
+
+- Once the Instance is ready, it will show a **Created On** date. You can periodically click on the refresh icon to refresh the page.
+
+    ![](images/100/SelfServ10.png)
+
+- Click on the **Hamburger Menu** to the right of the DevCS Services, and then click on **Access Service Instance** to load the Developer Cloud Service Console. If you happen to receive a message saying that the **Page isn't working**, click on the **Reload** button.
+
+    ![](images/100/SelfServ11.png)
 
 ### **STEP 3**: Create Developer Cloud Service Project
 
-- Click **New Project** to start the project create wizard. **Note**: Depending on the status of your developer cloud serivce, it is possible that the button may be labeled **Create Project** 
+- Click **New Project** or **Create Project** to start the project create wizard. 
 
-    ![](images/100/Picture100-8.png)
+    ![](images/100/SelfServ12.png)
 
 - On Details screen enter the following data and click on **Next**.
 
@@ -267,5 +284,116 @@ Each Sprint lists issues that are added to it. The Backlog section (the last sec
 - Click on the **Reports** button to view the Burndown and Sprint reports.
 
     ![](images/100/Picture100-36.png)
+
+### **STEP 11**: Configure Build Template, Build Instance and Storage Connection
+
+In this step we are going to configure a server that can be used to perform the Build functions performed in later labs, but we'll get those steps out of the way now.
+
+- Click on your **User Name** in the top right corner of the window. Then click on **Organization**.
+
+    ![](images/100/SelfServ14.png)
+
+- Let's first configure the connection to the Storage Cloud Service so our build process will have a place to store the build artifacts. Click on **Storage** in the right hand menu. 
+
+    ![](images/100/SelfServ15.png)
+
+- Click on the **New Configuration** button.
+
+    ![](images/100/SelfServ16.png)
+
+- We are now going to fill in the values labled **1, 2, 3 and 4** by returning to the **Main Dashboard** tab displayed when you first logged into your Oracle Cloud Account. If that tab is no longer available, you can login again following the steps at the first of the lab
+
+    ![](images/100/SelfServ17.png)
+
+- From the Main Dashboard, click on the **Storage Classic** Service.
+
+    ![](images/100/SelfServ18.png)
+
+- You will now use the following pieces of data from this screen to fill in the **New Configuration** dialog.
+
+    ![](images/100/SelfServ19.png)
+
+- Return to the tab/window with the **New Configuration** dialog.
+- In **Field 1. Service ID**, append the "`Storage-`" to the front of the **Cloud Account Name** - e.g. `Storage-myaccountname`.
+- In **Field 2. User Name**, copy and paste the **Buyer** email address. e.g. `myaccountname@me.com`.
+- In **Field 3. Password**, enter your account Password.
+- In **Field 4. Authorization URL**, copy and past the **Auth V1 Endpoint**
+- Click on the **Create** Button.
+
+    ![](images/100/SelfServ20.png)
+
+- After your Configuration is accepted, click on **Test Connection**
+
+    ![](images/100/SelfServ21.png)
+
+- **Connection Successful** should appear next to the Test Connection button.
+
+    ![](images/100/SelfServ22.png)
+
+- Now we will configure the Virtual Machine Templates and Machines to support the build processes in future labs. Click on **Virtual Machines** in the left hand menu. Then click on the **Configure Compute Account** button.
+
+    ![](images/100/SelfServ23.png)
+
+- The following dialog will be displayed, and we will fill in fields **1, 2 and 3** using data from the **Classic Compute** console.
+
+    ![](images/100/SelfServ26.png)
+
+
+- We next need to go to the the **Classic Compute** Console. To get to that console, return to the tab/window with the **Storage Classic** dashboard. From that tab/window, click on the **Dashboard** icon on the top right corner of the screen.
+
+    ![](images/100/SelfServ24.png)
+
+- Use the information from this screen to fill in the **Configure Compute Account** dialog.
+
+    ![](images/100/SelfServ27.png)
+
+- Return to the tab/window with the ***Configure Compute Account** dialog.
+- In **Field 1. User Name**, copy and paste the **Buyer** email address. e.g. `myaccountname@me.com`.
+- In **Field 2. Password**, enter your account Password.
+- In **Field 3. Service Instance ID**, copy and paste the **Service Instance ID**
+- In **Field 4. REST Endpoint**, copy and paste the **REST Endpoint**.
+- Click on the **Save** Button. If you entered everything correct, the configuration will be accepted.
+
+    ![](images/100/SelfServ26.png)
+
+- Before we create a New VM for the Build Server, we need to define a template that the build server(s) can use. Click on the **VM Templates** option in the Left Hand menu.
+
+    ![](images/100/SelfServ29.png)
+
+- Click on the **New Template** button.
+
+    ![](images/100/SelfServ30.png)
+
+- Name the new Template `OELNodeJava` and set the Platform to **Oracle Linux 7**, Click on the **Create** button.
+
+    ![](images/100/SelfServ31.png)
+
+- Click on the **Configure Software** button.
+
+    ![](images/100/SelfServ32.png)
+
+- Click on **Node.JS v8.x** from the list of available software to add to this build image template. Notice that along with the version of Node.js that you just added, that this template already includes the **Required Build VM Components**, which includes Git, Java, JUnit, Maven, Ruby and Ant. Click on the **Done** button.
+
+    ![](images/100/SelfServ33.png)
+
+- Click on the **Virtual Machines** left hand menu option, and then click on **New VM**.
+
+    ![](images/100/SelfServ34.png)
+
+- **Leave the defaults** and and click on **Add**. We are leaving the Quantity set to **1** build server running. If you needed to support many users running builds concurrently, and if you had the capacity, the number of build images could be increased. Also, use the new VM Template **OEL7NodeJava** that we just created.
+
+    ![](images/100/SelfServ35.png)
+
+- Click on the **Sleep Timeout** button.
+
+    ![](images/100/SelfServ36.png)
+
+- Change the Sleep Timeout to `120` Minutes and click on **Save**. Once the first build starts the Build Server image, it will remain running for any subsequent builds that we do in this workshop, ensuring better performance. This number can be adjust base on performance vs cost needs.
+
+    ![](images/100/SelfServ37.png)
+
+- Click on the **Close** button in the top right corner to return to the main Developer Cloud Service Dashboard.
+
+    ![](images/100/SelfServ40.png)
 
 - **You are now ready to move to the next lab.**

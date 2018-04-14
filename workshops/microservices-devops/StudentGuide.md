@@ -43,16 +43,12 @@ Temporary Password:
 Cloud Account Name:
 Cloud Account Password:
 
-Identity Service ID:
-Data Center:
 ```
 
 - ***(1)*** **Username**: With a trial account, this should be your email address.
 - ***(2)*** **Temporary Password**: The first time you login, you will use this temporary password.
 - ***(3)*** **Cloud Account Name**: This name will be used when you login.
 - **Cloud Account Password**: Once you reset your temporary password, record your new password.
-- **Identity Service ID**: We will locate this information later, but make a holding place in your notes for this field. This field will be used when creating a connection between the Developer Cloud Service (DevCS) and the Application Cloud Service (ACCS), allowing automatic deployment of Applications.
-- **Data Center**: We'll locate this information in an upcoming step, and this fields will also be used when creating the connection between DevCS and ACCS.
 
 ### **Step 3**: Log into your Cloud Account
 
@@ -65,29 +61,15 @@ Data Center:
 
     ![](images/studentguide/Picture200.2.png)
 
-- Located the **Identity Cloud** Services, and click on **Show**.
+- Click on **Show** for the **Application Container**, **Developer**, **Identity Cloud**, **Compute Classic** and **Storage Classic** services. Then click the **X** in the top right corner to close the dialog.
 
     ![](images/studentguide/Picture200.3.png)
 
-- Also locate and **Show** the **Storage Classic** and **Application Container** cloud services. Exit the Customization popup by clicking on the **X** in the upper right corner of the dialog.
+    ![](images/studentguide/Picture200.3.1.png)
 
-    ![](images/studentguide/Picture200.4.png)
+    ![](images/studentguide/Picture200.3.2.png)
 
-- To capture the **Tenant ID**, click on the **Identity Cloud** service you just added to the Dashboard.
 
-    ![](images/studentguide/Picture200.5.png)
-
-- Once the Console has loaded, we will capture the **Identity Service ID**. Copy and save the text enclosed in the red box. This ID will be used when connecting to Application Container Cloud Service from the Developer Cloud Services. Copy the ID and save it in your notes.
-
-    ![](images/studentguide/Picture200.8.png)
-
-- Also from the Oracle Identity Cloud Service console, you will capture the **Data Region**. In this example, the data Region is North America. Later on in the workshop you will be asked to select a Data Center for Deployment to the Application Container Cloud Service, and you can use one of the North American Data Centers, e.g. US Commercial 1 or 2. You now have the important user and connection information that will be used during the remainder of this workshop. 
-
-    ![](images/studentguide/Picture200.8.1.png)
-
-- Return to the main dashboard by clicking on the **Hamburger Menu** and then on the **Dashboard** icon.
-
-    ![](images/studentguide/Picture200.9.png)
 
 ### **Step 4**: Check/Set Storage Replication Policy
 

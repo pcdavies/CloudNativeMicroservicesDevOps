@@ -42,7 +42,7 @@
             },
             {
                 "number": "200",
-                "filename": "CloudNative200.md",
+                "filename": "CloudNative200SelfService.md",
                 "title": "Lab 200: Continuous Delivery of Java Microservices",
                 "description": "Access Developer Cloud Service, Import external GIT Repository, Import project into Elicpse, and Build and Deploy a project using Developer Cloud Service and Oracle Application Container Cloud Service.",
                 "labels": {
