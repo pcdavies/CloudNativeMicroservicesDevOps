@@ -97,7 +97,7 @@ Now that we have the source code in the Developer Cloud Service managed GIT repo
 
     ![](images/200/Picture20.png)  
 
-- In the New Job popup enter `Twitter Feed Build` for the Job Name, click on **Create New**, select **OEL7NodeJava** from the Software Teamplate, and then click **Create Job**.
+- In the New Job popup enter `TwitterFeedBuild` for the Job Name, click on **Create New**, select **OEL7NodeJava** from the Software template, and then click **Create Job**.
 
     ![](images/200/PictureSelfServe01.png)  
 
@@ -124,7 +124,6 @@ Now that we have the source code in the Developer Cloud Service managed GIT repo
 - set the **Files to archive** field to `**/target/*`
 - Select **Archive Maven Artifacts**. 
 - Leave **Compression** set to **GZIP**.
-- Click on the **Gear Icon** in the Job Configuration panel. 
 
     ![](images/200/PictureSelfServe07.png)
 
@@ -140,11 +139,7 @@ Now that we have the source code in the Developer Cloud Service managed GIT repo
 
     ![](images/200/PictureSelfServe10.png)
 
-- Click on the **Triggers** tab. Click on the **Add Trigger** button and select **SCM Polling Trigger**
-
-    ![](images/200/PictureSelfServe11.png)
-
-- For the sake of this workshop, we are going to set the polling to every two minutes by entering "`0/2 * * * #Every 2 minutes`" into the **Cron Pattern** field. Click on **Save** to save tis Job Configuration.
+- Click on **Save** to save this Job Configuration.
 
     ![](images/200/PictureSelfServe12.png)
 
@@ -297,163 +292,101 @@ We have now verified that the statictweets microservice has been deployed and fu
 
 # Add Filter to Static Twitter Feed Service
 
-Now that we have completed the import, build, deployment, and verification of our initial static twitter microservice, it is time to extend the project by adding a new microservice that allows us to dynamically filter the incoming tweets based on their contents. We will use the Eclipse IDE to clone the managed GIT repository to our local workstation and add the filtering feature to the local copy. We will create a new code branch for it and commit the branch. Then we will create a merge request and switch to the Project Manager persona to approve that request. We will also see how we can manage our agile task status directly from Eclipse.
+Now that we have completed the import, build, deployment, and verification of our initial static twitter microservice, it is time to extend the project by adding a new microservice that allows us to dynamically filter the incoming tweets based on their contents.
 
-## Clone Project to Eclipse IDE
+Normally you would you an Integrated Development environment like Eclipse to update update and test your code modifications locally, but for simplicity, we will download the Developer Cloud Service GIT repository locally, use an editor of your choice, and then commit and push the code back to the Developer Cloud Service GIT repository.
 
-### **STEP 8**: Load Eclipse IDE
+## Install GIT on your laptop
 
-In the following task we will provide screen shots taken from the optional compute image provided with the workshop. If you are using Eclipse and Brackets on your local hardware, your screens may vary slightly.
+### **Step 8**: Install Git
 
-- Right Click and select **Run** on the **Eclipse** Desktop Icon.
+- There are many sites that you can visit to install GIT on your laptop. Visit [https://git-scm.com/downloads](https://git-scm.com/downloads) to download and install GIT for your operating system. In the examples to follow, we will use Windows cmd window to execute the git commands, but these examples will work equally as well on Windows or a Mac.
 
-    Note: If you have not already installed and configured Eclipse, please see this Workshop's **Student Guide** for instructions on how to install and configure it.
+- Open a **cmd** or **terminal** window and execute the command: 
 
-    ![](images/200/Picture50.png)  
+    ```
+    git --version
+    ```
 
-### **STEP 9**: Create connection to Oracle Developer Cloud Service
+    ![](images/200/PictureSelfServe22.png)  
 
-- We will now create a connection to the Developer Cloud Service. To do this, first click on the menu options **Window -> Show View ->Other**  
+### **Step 9**: Clone the GIT Repository to your laptop
 
-    ![](images/200/Picture52.png)  
+- Back in the **Developer Cloud Service** Console, click on **Project** in the left hand menu. Then select the text in the **TwitterFeedMicroservice.git** URL, right-click and select **Copy**.
 
-- Enter `oracle` in the search field. Select **Oracle Cloud**, and click on **OK**.  
+    ![](images/200/PictureSelfServe23.png)  
 
-    ![](images/200/Picture53.png)  
+    ![](images/200/PictureSelfServe24.png)  
 
-- Click on **Connect** in the Oracle Cloud tab
+- Enter the following into the **cmd/terminal** window, and **appending the URL** you just copied after the command 
 
-    ![](images/200/Picture54.png)  
+    ```
+    git clone <the git repository URL you copied>
+    ``` 
 
-- Enter the following information, then click on the **Finish** button:
+    ![](images/200/PictureSelfServe25.png)  
 
-  - **Identity Domain**: `<your identity domain>` ***Note:*** if you're using a trial account, since you are connecting to the Developer Cloud Services, which is a Traditional Service, you populate this field with the **Identity Domain Name** you recorded.
+- Now you will change to the **TwitterFeedMicroservice**, and you will create a new Branch titled **Feature2**. You will then **Checkout** that branch. Use the following commands:
 
-  - **User name**: `<your Username>`
+    ```
+    cd TwitterFeedMicroservice
+    git branch Feature2
+    git checkout Feature2
+    ```
 
-  - **Password**: `<your Identity domain password>`
+### **Step 10**: Update the StaticTweets.java and MyServiceTest.java
 
-  - **Connection Name**: `OracleConnection`
+- We need to modifiy the StaticTweets.java file so that it will perform filtering of Tweets. To do this, open the file **TwitterFeedMicroservices/src/main/java/com/example/StaticTweets.java**. Here is an example on Windows:
 
-    ![](images/200/Picture55.2.png)  
+    ```
+    notepad src/main/java/com/example/StaticTweets.java
+    ```
+    ![](images/200/PictureSelfServe26.png)  
 
-- If prompted, enter and confirm a Master Password for the Eclipse Secure Storage.
-  - In our example we use the **password:**  `oracle`. Press **OK**.
+- In your editor of choice, located the lines that begin with **Remove this comment**. Removing these lines will cause the code between the comments to execute:
 
-    ![](images/200/Picture56.png)  
+    ![](images/200/PictureSelfServe27.png)  
 
-  - If prompted to enter a Password Hint, click on ***No***
+- The file should now look like this. **Save** the file and close the Editor.
 
-    ![](images/200/Picture57.png)  
+     ![](images/200/PictureSelfServe28.png)  
 
-### **STEP 10**: Create a local clone of the repository
+- Now we need to update the test code that will be run whenever a build occurs. Open the file  **TwitterFeedMicroservices/src/test/java/com/example/MyServiceTest.java**. Here is an example on Windows:
 
-- **Expand Developer**, and then **double click** on **Alpha Office Product Catalog** project to activate the project.
+    ```
+    notepad src/test/java/com/example/MyServiceTest.java
+    ```
+     ![](images/200/PictureSelfServe30.png)  
 
-    ![](images/200/Picture58.png)  
+- Search for the method **testGitStaticSearchTweets()** and remove the **Comment Lines** surronding that method. 
 
-- **Expand** the **Code** section, and **double click** on the **Git Repo** [**TwitterFeedMicroservice.git**], to cause the Repo to be cloned locally.
+     ![](images/200/PictureSelfServe31.png)  
 
-    ![](images/200/Picture59.png)  
+- The file should now look like this. **Save** the file and exit the Editor.
 
-- To import project into Eclipe navigate to the top left **File** menu and select **Import**.
+     ![](images/200/PictureSelfServe32.png)  
 
-    ![](images/200/Picture59.1.png)  
 
-- In Import wizard, expand the **Git** menu item and select **Projects from Git**. Click **Next**
+- Execute the commands below. The **git status** will show the files that you modified in this branch. The **git config** commands will set the username and email used when pushing the changes to the Developer Cloud Service GIT repository. The finally, the **git commit** command commit the changes and add a comment.
 
-    ![](images/200/Picture59.2.png)  
+    ```
+    git status
+    git config --global user.email "youremail@me.com"
+    git config --glogal user.name "your name"
+    git commit -am "Feature2: Added Support for Filtering"
+    ```
 
-- Select **Existing local repository** and click **Next**
+    ![](images/200/PictureSelfServe33.png)
 
-    ![](images/200/Picture59.3.png)  
+- Let's now push the code to the Repository. Execute the following command which will push the **Feature2** branch.
 
-- Select the **TwitterFeedMicroservice** git repository and click **Next**
+    ```
+    git push --set-upstream origin Feature2
+    ```
 
-    ![](images/200/Picture59.4.png)  
+    ![](images/200/PictureSelfServe34.png)
 
-- Take the defaults and click **Next**
-
-    ![](images/200/Picture59.5.png)  
-
-- Review configuration and click **Finish**
-
-    ![](images/200/Picture59.6.png)  
-
-
-### **STEP 11**: Set Feature 2 Status to In Progress
-
-In the previous steps we updated the status of the Tasks assigned to "Bala Gupta" using the web interface to the Developer Cloud Service. In this step we will use the Eclipse connection to the Developer Cloud Service to update the status of Bala’s tasks.
-
-- Within the Oracle Cloud Connection tab, double click the **Issues** to expand, then double click on **Mine** to expand your list. Once you see the list of your Issues, then double click on **Create Filter on Twitter Feed**. You can adjust what Eclipse views are visible using the right side and top Window menu options. 
-
-    ![](images/200/Picture71.png)  
-
-- Scroll down to the bottom of the **Create Filter on Twitter Feed** window. In the Actions section, and change the **Actions** to **Accept (change status to ASSIGNED)**, then click on **Submit**.
-
-    ![](images/200/Picture72.2.png)  
-
-- Optionally, if you return to the Developer Cloud Service web interface, you’ll see that the Eclipse interface caused the Feature 2 to be moved to the **In Progress** column of the **Agile > Active Sprints**.
-
-    ![](images/200/Picture73.2.png)  
-
-## Add the Filter to the Service
-
-The Code we cloned locally contains the entire source necessary to filter the Static Twitter Feed. In this section of the lab, we will un-comment the code and test the filter.
-
-### **STEP 12**: Add Filter
-
-- In the Project Explorer, **expand** the **TwitterFeedMicroservice > src/main/java > com.example** and **double click** on **StaticTweets.java** to open the source code.
-
-    ![](images/200/Picture78.png)  
-
-- In the StaticTweets.java source file, scroll down until you find two lines of code that begin with “**--- Remove this comment**”. **Delete both of these lines** to activate the code that will cause filtering of the Static Tweets file to occur.
-
-    ![](images/200/Picture79.png)  
-
-- Your code should now look like this:
-
-    ![](images/200/Picture75.5.png)  
-
-- Next we will enable the filter in the testing code. Expand the **src/test/java > com.example folder**, and **double click** on **MyServiceTest.java** to open the source file
-
-    ![](images/200/Picture80.png)  
-
-- In the MyServiceTest.java source file, locate the method **testGetStaticSearchTweets()**, and **remove** the **comments** so that section of code will execute.
-
-    ![](images/200/Picture81.png)  
-
-- Click on the **Save All** icon
-
-    ![](images/200/Picture82.png)  
-
-## Create Branch and Merge Request
-
-### **STEP 13**: Create Branch
-
-- right click on **TwitterFeedMicroservice** and select **Team > Switch To > New Branch**
-
-    ![](images/200/image087.png)  
-
-- Enter **Feature2** for the Branch name, and click on **Finish**
-
-    ![](images/200/image088.png)  
-
-- We can now commit our code to the branch by Right Clicking on **TwitterFeedMicroservice** and then selecting **Team > Commit**
-
-    ![](images/200/image089.png)  
-
-- Enter “**Feature2: Added Support for Filtering**” in the Commit Message box.
-- If the changed files are not already identified as Staged Changes, **Drag and Drop** the **changed files** into the **Staged Changes** panel.
-- Click on **Commit and Push**. Note: it is possible to change the default Author and Committer to match the current “persona." However, for the sake of this lab guide, we will leave the defaults.  
-
-    ![](images/200/image090.png)  
-
-- Accept the Default for the **Push Branch Feature** 2 dialog and click on **Next**
-- Click on the **Finish button** in the Push Confirmation dialog
-- Click on **Ok** in Push Result dialog
-
-### **STEP 14**: Create Merge Request
+### **STEP 11**: Create Merge Request
 
 - Return to the Developer Cloud Service Dashboard in the browser.  If the session has timed out you may have to navigate to it again. On navigation panel click **Code**, select the **Feature2** branch. Notice the changes. Click on the **Src** folder to view the changes commited to the branch from Eclipse.
 
@@ -494,7 +427,7 @@ The Code we cloned locally contains the entire source necessary to filter the St
 
 In the following steps “Lisa” will merge the branch create by “Bala” into the master.
 
-### **STEP 15**: Merge Requests
+### **STEP 12**: Merge Requests
 
 ![](images/lisa.png)  
 
@@ -524,7 +457,7 @@ In the following steps “Lisa” will merge the branch create by “Bala” int
 
 ## Test the JavaTwitterMicroservice in the Cloud
 
-### **STEP 16**: Test Microservice
+### **STEP 13**: Test Microservice
 
 - Click **Deploy** in the left-hand menu to load the **Deployments** screen.
 
