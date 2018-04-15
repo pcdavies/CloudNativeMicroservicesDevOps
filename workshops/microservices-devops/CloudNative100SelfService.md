@@ -21,6 +21,7 @@ Although you will login as a single user, you will take on 4 Personae during the
 - Create Agile Board and initial Sprint
 - Add Issues to Sprint
 - Start Sprint
+- Configure Build Server Infrastructure
 
 ## Required Artifacts
 
