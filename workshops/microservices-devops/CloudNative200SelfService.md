@@ -296,7 +296,7 @@ Now that we have completed the import, build, deployment, and verification of ou
 
 Normally you would you an Integrated Development environment like Eclipse to update update and test your code modifications locally, but for simplicity, we will download the Developer Cloud Service GIT repository locally, use an editor of your choice, and then commit and push the code back to the Developer Cloud Service GIT repository.
 
-## Clone Locally and Update Git Repositories Source Code
+## Clone Repository Locally and Update Source Code
 
 ### **Step 8**: Install Git
 
@@ -487,91 +487,3 @@ In the following steps “Lisa” will merge the branch create by “Bala” int
     ![](images/200/image118.5.png)  
 
 - **You are now done with this lab.**
-
-# Supplementary Assignment – Twitter Live Feed Credentials
-
-## Create Twitter App
-
-***This is an optional assignment. We recommend that this section only be attempted if you have ample time to complete the other labs. Otherwise, return to this section later***. During this assignment you’ll have an opportunity to put your new knowledge of the Developer Cloud Service to work by extending our static twitter microservices to use live twitter data. In this exercise, you will acquire Twitter Application Credentials and use them to operate on a live twitter feed in your microservices. For the purposes of this assignment, you will use a personal account to log in to twitter and generate the credentials. However, in the context of our application, assume that these credentials have been provided by Product Management and represent the approved credentials for our production application.
-
-You have two options for managing this code change in the version control system. If you would like more practice with the multi-user workflow, you can start a new branch for this feature, commit to that branch, create a merge request, and approve the merge. We’ll refer to this in the instructions as **Method A**. If you’re comfortable with that workflow, you can switch to master in your local repository, pull the latest revision from the cloud, and commit and push directly to master for this exercise. This will be **Method B**.
-
-### **STEP 17**: Create New Twitter App
-
-To generate the unique twitter credentials for our microservices, we need to sign in to twitter and create a new application for this project, then generate access tokens for it.
-
-- Navigate to https://apps.twitter.com. Click on the **Sign In** link.
-
-    ![](images/200/image119.png)  
-
-- If you are already a twitter user, **Log In** using your twitter credentials. Otherwise, click on the **Sign up Now** link
-
-    ![](images/200/image120.png)  
-
-- Once logged in, click on the **Create New App** button.
-
-    ![](images/200/image121.png)  
-
-- **Enter the following** and Click on the **Create your Twitter application** button. When entering the Application Name, append something unique to the Name’s end. E.g. your initials or name:
-
-  **Name:** `JavaTwitterMicroservice<UniqueName>`
-
-  **Description:** `A Twitter Feed Microservice`
-
-  **Website:** `https://cloud.oracle.com/acc`
-
-  **Developer Agreement:** Click `Yes`
-
-    ![](images/200/image122.png)  
-
-- Click on the **Keys and Access Tokens** tab.
-
-    ![](images/200/image123.png)  
-
-- If at the bottom of the page your Tokens are not visible, click on the **Create my access tokens** button
-
-    ![](images/200/image124.png)  
-
-- Note: If you are following **Method B**, before you start modifying code in Eclipse, you should switch to the master branch and pull from the remote repository.
-
-- Return to Eclipse, and in the Project Explorer tab, expand **TwitterFeedMicroservices.git > src/main/config** and double click on **twitter-auth.json** to load the source.
-
-    ![](images/200/image125.png)  
-
-- This is the File that will be deployed to the Application Container Cloud. Edit this file by replacing the xxx’s in **consumerKey, consumerSecret, token and tokenSecred with the Consumer Key (API Key), Consumer Secret (API Secret), Access Token and Access Token Secret** found on the Twitter Application Management page.
-
-    ![](images/200/image126.png)  
-
-- Click on the Save All icon in Eclipse ![](images/200/image127.png)
-
-- So we can test locally, let’s repeat the same step by updating the Test Code’s twitter-auth.json credentials. Open the file located in **TwitterFeedMicroservices.git > src/test/resources > twitter-auth.json** and update. Once updated, click on the **Save All** Icon.
-
-    ![](images/200/image128.png)
-
-- Let’s now un-comment the code that will allow the online Twitter Feed to be tested. Using the Project Explorer, open the **TwitterFeedMicroservice.git > src/test/java > com.example > MyServiceTest.java** file.
-
-    ![](images/200/image129.png)
-
-- In the MyServiceTest.java file, located the method **testGetTweets()** and **remove the comment** surrounding that method.
-
-    ![](images/200/image130.png)
-
-- Click on the Eclipse Save All icon ![](images/200/image127.png)
-
-- Run the Test by right clicking on **TwitterFeedMicroservice** and selecting **Run As > Maven Test**
-
-    ![](images/200/Picture87.png)
-
-- After the tests run, the testGetTweets() method will return the message “The client read 10 messages!,” and all Tests should complete successfully.
-
-    ![](images/200/image131.png)
-
-- If you’re following **Method A**, now that you’ve enabled this new feature to access the live twitter feed, you can follow the previous steps used in this document to commit the code to the cloud. Once committed, you will use the Developer Cloud Service to create a merge request and then approve that request. Once the master branch is updated, an automatic build and deployment to the Application Container Cloud Service will be performed. Verify that deployment is successful before continuing.
-
-- If you’re following **Method B**, now that you’ve enabled this new feature to access the live twitter feed, you can follow the previous steps used in this document to commit the code to the cloud. That will trigger an automatic build and cause the Application Container Cloud Service deployment to be performed by the Developer Cloud Service. Verify that deployment is successful before continuing.
-
-- For either method, you will now be able append `/tweets` to the end of the Application Container Cloud Service URL and retrieve the Live Tweets.
-
-- The example below shows the live tweets returned, once the application is re-deployed.
-
-    ![](images/200/image132.png)
