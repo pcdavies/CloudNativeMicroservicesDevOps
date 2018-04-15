@@ -285,7 +285,11 @@ Each Sprint lists issues that are added to it. The Backlog section (the last sec
 
     ![](images/100/Picture100-36.png)
 
-### **STEP 11**: Configure Build Template, Build Instance and Storage Connection
+# Prepare Build Server Infrastructure
+
+## Configure and Setup Infrastructure
+
+### **STEP 11**: Setup Storage Connection
 
 In this step we are going to configure a server that can be used to perform the Build functions performed in later labs, but we'll get those steps out of the way now.
 
@@ -330,6 +334,8 @@ In this step we are going to configure a server that can be used to perform the 
 
     ![](images/100/SelfServ22.png)
 
+### **STEP 12**: Setup Connection to Computer Services
+
 - Now we will configure the Virtual Machine Templates and Machines to support the build processes in future labs. Click on **Virtual Machines** in the left hand menu. Then click on the **Configure Compute Account** button.
 
     ![](images/100/SelfServ23.png)
@@ -356,6 +362,8 @@ In this step we are going to configure a server that can be used to perform the 
 
     ![](images/100/SelfServ26.png)
 
+### **STEP 13**: Create Builder Server Template
+
 - Before we create a New VM for the Build Server, we need to define a template that the build server(s) can use. Click on the **VM Templates** option in the Left Hand menu.
 
     ![](images/100/SelfServ29.png)
@@ -375,6 +383,9 @@ In this step we are going to configure a server that can be used to perform the 
 - Click on **Node.JS v8.x** from the list of available software to add to this build image template. Notice that along with the version of Node.js that you just added, that this template already includes the **Required Build VM Components**, which includes Git, Java, JUnit, Maven, Ruby and Ant. Click on the **Done** button.
 
     ![](images/100/SelfServ33.png)
+
+### **STEP 14**: Create the Build Server Image
+
 
 - Click on the **Virtual Machines** left hand menu option, and then click on **New VM**.
 
