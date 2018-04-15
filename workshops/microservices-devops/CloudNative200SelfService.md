@@ -296,7 +296,7 @@ Now that we have completed the import, build, deployment, and verification of ou
 
 Normally you would you an Integrated Development environment like Eclipse to update update and test your code modifications locally, but for simplicity, we will download the Developer Cloud Service GIT repository locally, use an editor of your choice, and then commit and push the code back to the Developer Cloud Service GIT repository.
 
-## Install GIT on your laptop
+## Clone Locally and Update Git Repositories Source Code
 
 ### **Step 8**: Install Git
 
@@ -412,7 +412,6 @@ Normally you would you an Integrated Development environment like Eclipse to upd
 
     ![](images/200/image096.png)  
 
-
 - Enter the following information into **Details** and click **Create**
 
   **Summary:** `Merge Feature 2 into master`
@@ -423,11 +422,11 @@ Normally you would you an Integrated Development environment like Eclipse to upd
 
     **Note**: **Bala Gupta** is logically sending this request to **Lisa Jones**
 
-## Merge the Branch as Lisa Jones
-
-In the following steps “Lisa” will merge the branch create by “Bala” into the master.
+## Merge the Branch and test as Lisa Jones
 
 ### **STEP 12**: Merge Requests
+
+In the following steps “Lisa” will merge the branch create by “Bala” into the master.
 
 ![](images/lisa.png)  
 
@@ -455,9 +454,7 @@ In the following steps “Lisa” will merge the branch create by “Bala” int
 
     ![](images/200/image111.png)
 
-## Test the JavaTwitterMicroservice in the Cloud
-
-### **STEP 13**: Test Microservice
+### **STEP 13**: Test the JavaTwitterMicroservice
 
 - Click **Deploy** in the left-hand menu to load the **Deployments** screen.
 
