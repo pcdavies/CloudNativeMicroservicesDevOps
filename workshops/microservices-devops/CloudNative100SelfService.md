@@ -289,7 +289,7 @@ Each Sprint lists issues that are added to it. The Backlog section (the last sec
 
 ## Configure and Setup Infrastructure
 
-### **STEP 11**: Setup Storage Connection
+### **STEP 12**: Setup Storage Connection
 
 In this step we are going to configure a server that can be used to perform the Build functions performed in later labs, but we'll get those steps out of the way now.
 
@@ -334,7 +334,7 @@ In this step we are going to configure a server that can be used to perform the 
 
     ![](images/100/SelfServ22.png)
 
-### **STEP 12**: Setup Connection to Computer Services
+### **STEP 13**: Setup Connection to Computer Services
 
 - Now we will configure the Virtual Machine Templates and Machines to support the build processes in future labs. Click on **Virtual Machines** in the left hand menu. Then click on the **Configure Compute Account** button.
 
@@ -362,7 +362,7 @@ In this step we are going to configure a server that can be used to perform the 
 
     ![](images/100/SelfServ26.png)
 
-### **STEP 13**: Create Builder Server Template
+### **STEP 14**: Create Builder Server Template
 
 - Before we create a New VM for the Build Server, we need to define a template that the build server(s) can use. Click on the **VM Templates** option in the Left Hand menu.
 
@@ -384,7 +384,7 @@ In this step we are going to configure a server that can be used to perform the 
 
     ![](images/100/SelfServ33.png)
 
-### **STEP 14**: Create the Build Server Image
+### **STEP 15**: Create the Build Server Image
 
 
 - Click on the **Virtual Machines** left hand menu option, and then click on **New VM**.
