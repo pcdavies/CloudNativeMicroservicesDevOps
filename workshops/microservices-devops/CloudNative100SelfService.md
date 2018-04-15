@@ -30,7 +30,7 @@ Although you will login as a single user, you will take on 4 Personae during the
 
 ## Create Developer Cloud Service Project
 
-### **STEP 1**: Login to your **Traditional** Oracle Cloud Account
+### **STEP 1**: Login to your Oracle Cloud Account
 
 - If you are not already signed into the Oracle Cloud Dashboard, then from any browser go to the URL below:
 
