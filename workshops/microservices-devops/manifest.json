@@ -51,7 +51,7 @@
             },
             {
                 "number": "300",
-                "filename": "CloudNative300.md",
+                "filename": "CloudNative300SelfService.md",
                 "title": "Lab 300: Continuous Delivery of Database Microservices",
                 "description": "Access Developer Cloud Service, Import external GIT Repository, and Build and Deploy a project using Developer Cloud Service and Oracle Application Container Cloud Service.",
                 "labels": {
@@ -60,7 +60,7 @@
             },
             {
                 "number": "400",
-                "filename": "CloudNative400.md",
+                "filename": "CloudNative400SelfService.md",
                 "title": "Lab 400: Cloud Native Rapid Javascript Development with node.js",
                 "description": "Access Developer Cloud Service, Import Code from external Git Repository, then Build and Deploy project using Developer Cloud Service and Oracle Application Container Cloud Service",
                 "labels": {
