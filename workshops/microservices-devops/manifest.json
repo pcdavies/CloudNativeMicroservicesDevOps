@@ -44,7 +44,7 @@
                 "number": "200",
                 "filename": "CloudNative200SelfService.md",
                 "title": "Lab 200: Continuous Delivery of Java Microservices",
-                "description": "Access Developer Cloud Service, Import external GIT Repository, Import project into Elicpse, and Build and Deploy a project using Developer Cloud Service and Oracle Application Container Cloud Service.",
+                "description": "Access Developer Cloud Service, Import external GIT Repository, and Build and Deploy a project using Developer Cloud Service and Oracle Application Container Cloud Service.",
                 "labels": {
                     "version": "Self-Service"
                 }
@@ -62,7 +62,7 @@
                 "number": "400",
                 "filename": "CloudNative400.md",
                 "title": "Lab 400: Cloud Native Rapid Javascript Development with node.js",
-                "description": "Access Developer Cloud Service, Import Code from external Git Repository, Import Project into Brackets, then Build and Deploy project using Developer Cloud Service and Oracle Application Container Cloud Service",
+                "description": "Access Developer Cloud Service, Import Code from external Git Repository, then Build and Deploy project using Developer Cloud Service and Oracle Application Container Cloud Service",
                 "labels": {
                     "version": "Self-Service"
                 }
@@ -98,7 +98,7 @@
                 "number": "200",
                 "filename": "CloudNative200.md",
                 "title": "Lab 200: Continuous Delivery of Java Microservices",
-                "description": "Access Developer Cloud Service, Import external GIT Repository, Import project into Elicpse, and Build and Deploy a project using Developer Cloud Service and Oracle Application Container Cloud Service.",
+                "description": "Access Developer Cloud Service, Import external GIT Repository, and Build and Deploy a project using Developer Cloud Service and Oracle Application Container Cloud Service.",
                 "labels": {
                     "version": "Instructor Led"
                 }
@@ -116,7 +116,7 @@
                 "number": "400",
                 "filename": "CloudNative400.md",
                 "title": "Lab 400: Cloud Native Rapid Javascript Development with node.js",
-                "description": "Access Developer Cloud Service, Import Code from external Git Repository, Import Project into Brackets, then Build and Deploy project using Developer Cloud Service and Oracle Application Container Cloud Service",
+                "description": "Access Developer Cloud Service, Import Code from external Git Repository, then Build and Deploy project using Developer Cloud Service and Oracle Application Container Cloud Service",
                 "labels": {
                     "version": "Instructor Led"
                 }
@@ -152,7 +152,7 @@
                 "number": "200",
                 "filename": "CloudNative200.md",
                 "title": "Lab 200: Continuous Delivery of Java Microservices",
-                "description": "Access Developer Cloud Service, Import external GIT Repository, Import project into Elicpse, and Build and Deploy a project using Developer Cloud Service and Oracle Application Container Cloud Service.",
+                "description": "Access Developer Cloud Service, Import external GIT Repository, and Build and Deploy a project using Developer Cloud Service and Oracle Application Container Cloud Service.",
                 "labels": {
                     "version": "Oracle Events"
                 }
@@ -170,7 +170,7 @@
                 "number": "400",
                 "filename": "CloudNative400.md",
                 "title": "Lab 400: Cloud Native Rapid Javascript Development with node.js",
-                "description": "Access Developer Cloud Service, Import Code from external Git Repository, Import Project into Brackets, then Build and Deploy project using Developer Cloud Service and Oracle Application Container Cloud Service",
+                "description": "Access Developer Cloud Service, Import Code from external Git Repository, then Build and Deploy project using Developer Cloud Service and Oracle Application Container Cloud Service",
                 "labels": {
                     "version": "Oracle Events"
                 }
