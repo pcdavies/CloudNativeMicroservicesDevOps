@@ -13,6 +13,9 @@ Although you will login as a single user, you will take on 4 Personae during the
 ***To log issues***, click here to go to the [github oracle](https://github.com/oracle/learning-library/issues/new) repository issue submission form.
 
 ## Objectives
+
+- Create the Developer Cloud Service Instance
+- Create the Developer Cloud Service Builder Template/Image
 - Create Initial Project
 - Create Product Issues
     - Create Issues for Twitter Feed Microservice
@@ -29,9 +32,9 @@ Although you will login as a single user, you will take on 4 Personae during the
 
 # Create Alpha Office Product Catalog Project
 
-## Create Developer Cloud Service Project
+## Create Developer Cloud Service Instance
 
-### **STEP 1**: Login to your Oracle Cloud Account
+### **STEP 1**: Login to your Oracle Cloud Account/Create DevCS Instance
 
 - If you are not already signed into the Oracle Cloud Dashboard, then from any browser go to the URL below:
 
@@ -54,7 +57,7 @@ Although you will login as a single user, you will take on 4 Personae during the
 
     ![](images/100/SelfServ01.1.png)
 
-### **STEP 2**: Login and Configure the Developer Cloud Service
+### **STEP 2**: Configure the Developer Cloud Service
 
 Oracle Developer Cloud Service provides a complete development platform that streamlines team development processes and automates software delivery. The integrated platform includes an issue tracking system, agile development dashboards, code versioning and review platform, continuous integration and delivery automation, as well as team collaboration features such as wikis and live activity stream. With a rich web based dashboard and integration with popular development tools, Oracle Developer Cloud Service helps deliver better applications faster.
 
@@ -91,6 +94,8 @@ Oracle Developer Cloud Service provides a complete development platform that str
 - Click on the **Hamburger Menu** to the right of the DevCS Services, and then click on **Access Service Instance** to load the Developer Cloud Service Console. If you happen to receive a message saying that the **Page isn't working**, click on the **Reload** button.
 
     ![](images/100/SelfServ11.png)
+
+## Create Developer Cloud Service Project
 
 ### **STEP 3**: Create Developer Cloud Service Project
 
@@ -306,7 +311,7 @@ In this step we are going to configure a server that can be used to perform the 
 
     ![](images/100/SelfServ16.png)
 
-- We are now going to fill in the values labled **1, 2, 3 and 4** by returning to the **Main Dashboard** tab displayed when you first logged into your Oracle Cloud Account. If that tab is no longer available, you can login again following the steps at the first of the lab
+- The following dialog will be displayed. We are now going to fill in the values numbered below as **1, 2, 3 and 4**. Keep this dialog open in a Tab, but we'll get these values by returning to the **Main Dashboard** tab displayed when you first logged into your Oracle Cloud Account. If that tab is no longer available, you can login again following the steps at the first of the lab
 
     ![](images/100/SelfServ17.png)
 
@@ -319,11 +324,11 @@ In this step we are going to configure a server that can be used to perform the 
     ![](images/100/SelfServ19.png)
 
 - Return to the tab/window with the **New Configuration** dialog.
-- In **Field 1. Service ID**, append the "`Storage-`" to the front of the **Cloud Account Name** - e.g. `Storage-myaccountname`.
-- In **Field 2. User Name**, copy and paste the **Buyer** email address. e.g. `myaccountname@me.com`.
-- In **Field 3. Password**, enter your account Password.
-- In **Field 4. Authorization URL**, copy and past the **Auth V1 Endpoint**
-- Click on the **Create** Button.
+    - In **Field 1. Service ID**, append the "`Storage-`" to the front of the **Cloud Account Name** - e.g. `Storage-myaccountname`.
+    - In **Field 2. User Name**, copy and paste the **Buyer** email address. e.g. `myaccountname@me.com`.
+    - In **Field 3. Password**, enter your account Password.
+    - In **Field 4. Authorization URL**, copy and past the **Auth V1 Endpoint**
+    - Click on the **Create** Button.
 
     ![](images/100/SelfServ20.png)
 
@@ -355,11 +360,11 @@ In this step we are going to configure a server that can be used to perform the 
     ![](images/100/SelfServ27.png)
 
 - Return to the tab/window with the ***Configure Compute Account** dialog.
-- In **Field 1. User Name**, copy and paste the **Buyer** email address. e.g. `myaccountname@me.com`.
-- In **Field 2. Password**, enter your account Password.
-- In **Field 3. Service Instance ID**, copy and paste the **Service Instance ID**
-- In **Field 4. REST Endpoint**, copy and paste the **REST Endpoint**.
-- Click on the **Save** Button. If you entered everything correct, the configuration will be accepted.
+    - In **Field 1. User Name**, copy and paste the **Buyer** email address. e.g. `myaccountname@me.com`.
+    - In **Field 2. Password**, enter your account Password.
+    - In **Field 3. Service Instance ID**, copy and paste the **Service Instance ID**
+    - In **Field 4. REST Endpoint**, copy and paste the **REST Endpoint**.
+    - Click on the **Save** Button. If you entered everything correct, the configuration will be accepted.
 
     ![](images/100/SelfServ26.png)
 

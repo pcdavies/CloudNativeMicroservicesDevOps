@@ -150,7 +150,15 @@ Now that we have the source code in our managed GIT repository, we need to creat
 
 Now that we have an automated build process, we will set up a deployment configuration that will push out build artifacts to a node.js environment running on Application Container Cloud Service. This will happen whenever a successful build occurs.
 
-- On the navigation panel click **Deploy** to access the Deployment page. Click **New Configuration**.
+- Before we create the new deployment, you will need the URLs for the two Services you previously created, as we will pass those URLs into this new services. To capture those URLs, click on the **Deploy** menu option on the left side of the screen. Then **Right Click** on the **AlphaOfficeREST** deployment, and **Copy the Link**. **Save** that link, and it will be used shortly.
+
+    ![](images/400/SelfServe16.png)  
+ 
+- Next, **Right Click** on the **JavaTwitterMicroservice**, and **Copy the Link**. Also **Save** that link, as it will also be used shortly.
+
+    ![](images/400/SelfServe17.png)  
+
+- We're now ready to create the next deployment. Click **New Configuration**.
 
 - Enter the following data:
 
@@ -176,22 +184,24 @@ Now that we have an automated build process, we will set up a deployment configu
 
     - **Artifact:** `target/msdbw-microserviceui.zip`
 
-    - To reduce the number of resources that are used, we will modify the default deployment of 2 instances. Click **Include ACCS Deployment** and enter the following in the text box:
+    - To reduce the number of resources that are used, we will modify the default deployment of 2 instances. Click **Include ACCS Deployment** and enter the following in the text box. 
+    - ***Note: You must paste the two URLs you copied into the create environment variable place holders***: Passing in these URLs will allow the UI to access the REST services providing the Product Catalog and Twitter Feed data.
 
     ```
     {
         "memory": "1G",
-        "instances": "1"
+        "instances": "1",
+        "environment": {
+            "DB_REST_URL": "REPLACE WITH THE AlphaOfficeREST URL",
+            "TWITTER_URL": "REPLACE WITH THE JavaTwitterMicroservice URL"
+        }
     }  
     ```
-    - Click on **Save**
+    - After your screen appears as shown below, click on **Save**
 
-    ![](images/400/SelfServe13.png)  
+    ![](images/400/SelfServe15.png)  
 
-- The bottom of the page will look like this:
-
-![](images/400/Picture35.4.png)  
-
+    ![](images/400/SelfServe14.png)
 
 - A message shows the deployment has been created.
 
@@ -199,7 +209,17 @@ Now that we have an automated build process, we will set up a deployment configu
 
 - Click the gear drop down for **AlphaOfficeProductCatalogUI** and select **Start**.
 
-    ![](images/400/Picture37.2.png)  
+    ![](images/400/Picture37.2.png)
+
+- As some background, before deploying the AlphaOfficeProductCatalogUI to the cloud, John made some modifications to support passing Environment variables into the UI. First, John modified the **./server.js** code, since server.js has access to the Environment variables using **process.env** calls. He added a new function which allows other services to access the REST endpoints for the ProductCatalog and TwitterFeed Services.
+
+    ![](images/400/john.png)  
+
+    ![](images/400/SelfServe18.png)  
+
+- Next, John modified the **./public/js/alphaOffice.js** code to allow it to call the **server.js** code and acquire the REST endpoint URLs.
+
+    ![](images/400/SelfServe19.png)
 
 - Wait until the message **Starting application** changes to **Last deployment succeeded**.
 
@@ -215,16 +235,12 @@ Now that we have an automated build process, we will set up a deployment configu
 
     ![](images/400/Picture39.png)  
 
-- A new tab in the browser should open with the UI application running.
 
-    ![](images/400/Picture42.png)  
-
-- The UI application is running, but REST services have not been activated.
-
-
-- The REST services have now been activated, and the UI application is fully functional.
+- The UI is now accessing the two  REST services to Acquire the Product Catalog information and any Tweets associated with Product.
 
    ![](images/400/Picture50.png)
+
+    As an overview of how the UI Application makes calls to the REST services, here is a quick review of the two code snippets from the AlphaOfficeProductCatalogUI
 
 - Click on any **product** to display the Tweets associated with that product. The Tweets are also accessed using a REST API.
 

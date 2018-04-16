@@ -10,14 +10,13 @@ This is the second of several labs that are part of the **Oracle Cloud DevOps an
 
 In the first lab (100), the Project Manager created a new project in the Developer Cloud Service and also created and assigned tasks to the developers of this application. In this lab you will assume the persona of the Java developer, who will be tasked with creating a microservices that will allow for retrieval and filtering of twitter data.
 
-***To log issues***, click here to go to the [github oracle](https://github.com/oracle/learning-library/issues/new) repository issue submission form.
-
 ## Objectives
 
 - Access Developer Cloud Service
 - Import Code from external Git Repository
-- Import Project into Eclipse
 - Build and Deploy project using Developer Cloud Service and Oracle Application Container Cloud Service
+- Clone the Git Repository Locally, and update the code to add a Filtered Search feature.
+- Commit to a new branch, and merge the new feature, build and deploy.
 
 ## Required Artifacts
 
@@ -299,6 +298,16 @@ Normally you would you an Integrated Development environment like Eclipse to upd
 ## Clone Repository Locally and Update Source Code
 
 ### **Step 8**: Install Git
+
+- To record the progress of your next tasks, in the Developer Cloud Service window click **Agile**, followed by clicking **Active Sprints**.
+
+- Drag and drop **Task 2** from **To Do** to **In Progress**.
+
+    ![](images/200/PictureSelfServe35.png)  
+
+
+- In the Change Progress popup click **OK**.
+
 
 - If you did not install Git as part of the **Trial Account** Student guide, there are many sites that you can visit to install GIT on your laptop. Visit [https://git-scm.com/downloads](https://git-scm.com/downloads) to download and install GIT for your operating system. In the examples to follow, we will use Windows cmd window to execute the git commands, but these examples will work equally as well on Windows or a Mac.
 

@@ -34,7 +34,7 @@ This Oracle Public Cloud DevOps and Cloud Native Microservices workshop will wal
 
 ![](images/studentguide/Picture199.1.png)
 
-- For later use during the workshop labs, **record the following fields**, some of which you'll find in the email. The other **fields not found in the email** will be located shortly. This information will be ***used multiple times*** during the workshops Labs, so we recommend that you **copy the following list to a text document**, and then populate the fields as they are collected from the **Welcome Email** documented above.
+- For later use during the workshop labs, **record the following fields**, some of which you'll find in the email. This information will be ***used multiple times*** during the workshops Labs, so we recommend that you **copy the following list to a text document**, and then populate the fields as they are collected from the **Welcome Email** documented above.
 
 ```
 Username:
@@ -112,4 +112,14 @@ Some services that we will use in this workshop require that your account's Repl
 
     ![](images/studentguide/Picture12.png)
 
+## Get Started on Lab 100
 
+### **Step 6**: Load Lab 100
+
+- Cick on the dropdown menu in the top left corner of the screen.
+
+    ![](images/studentguide/Picture219.png)
+
+- Select **Lab 100** to continue to your next section of this workshop.
+
+    ![](images/studentguide/Picture220.png)
