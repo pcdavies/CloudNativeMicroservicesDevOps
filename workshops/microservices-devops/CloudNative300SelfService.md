@@ -116,10 +116,9 @@ Now that we have the source code in our managed GIT repository, we need to creat
 
 - Click the **Post Build** tab and complete the following:
   - Enter `**/target/*` for **Files to Archive**.  
-  - Check **Archive Maven artifacts**.
   - Verify **GZIP** in the Compression Type.
   
-    ![](images/300/PictureSelfServe07.png)  
+    ![](images/300/PictureSelfServe07.1.png)  
 
 - Click **Save** to complete the configuration.
 
@@ -163,17 +162,17 @@ Now that we have an automated build process, we will setup up a deployment confi
 
 - Set the following Properties as follows:
 
-  - **Runtime**: `Node`
+  **Runtime**: `Node`
 
-  - **Subscription**: `Hourly`
+  **Subscription**: `Hourly`
 
-  - **Type:** `Automatic` and `Deploy stable builds only`
+  **Type:** `Automatic` and `Deploy stable builds only`
 
-  - **Job:** `Alpha REST Build`
+  **Job:** `Alpha REST Build`
 
-  - **Artifact:** `target/msdbw-microservice.zip`
+  **Artifact:** `target/msdbw-microservice.zip`
 
-  - **Include ACCS Deployment**: Check, and add the following text to reduce the number of resources that are used:
+  **Include ACCS Deployment**: Check, and add the following text to reduce the number of resources that are used:
 
     ```
     {
@@ -214,7 +213,6 @@ Now that we have an automated build process, we will setup up a deployment confi
 
     ![](images/300/Picture43.3.png)
  
-
 ### **STEP 7**: Complete Task
 
 We have now verified that the REST microservice has been deployed and functions properly. To finish up this lab, we will mark the Issue as completed in the Sprint.

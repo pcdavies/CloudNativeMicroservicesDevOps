@@ -118,11 +118,11 @@ Now that we have the source code in our managed GIT repository, we need to creat
 
     ![](images/400/SelfServe07.png)  
 
-- Enter `**/target/*` for **Files to Archive**.  
+    **Files to Archive**: `**/target/*`
 
-- Check **Archive the artifacts**.
+    Check **Archive Maven Artifacts**
 
-- Verify **GZIP** in the Compression Type.
+    **Compression**: Verify **GZIP** in the Compression Type.
 
     ![](images/400/SelfServe08.png)  
 
@@ -150,7 +150,7 @@ Now that we have the source code in our managed GIT repository, we need to creat
 
 Now that we have an automated build process, we will set up a deployment configuration that will push out build artifacts to a node.js environment running on Application Container Cloud Service. This will happen whenever a successful build occurs.
 
-- Before we create the new deployment, you will need the URLs for the two Services you previously created, as we will pass those URLs into this new services. To capture those URLs, click on the **Deploy** menu option on the left side of the screen. Then **Right Click** on the **AlphaOfficeREST** deployment, and **Copy the Link**. **Save** that link, and it will be used shortly.
+- Before we create the new deployment, you will need the URLs for the two Services you previously created, as we will pass those URLs into this new services. To capture those URLs, click on the **Deploy** menu option on the left side of the screen. Then **Right Click** on the **AlphaOfficeREST** deployment, and **Copy the Link**. **Save** the link, and it will be used shortly.
 
     ![](images/400/SelfServe16.png)  
  
@@ -236,7 +236,7 @@ Now that we have an automated build process, we will set up a deployment configu
     ![](images/400/Picture39.png)  
 
 
-- The UI is now accessing the two  REST services to Acquire the Product Catalog information and any Tweets associated with Product.
+- If the page initially loads with an error, wait a minute try refreshing the page. Once loaded, the UI is accessing the two REST services to Acquire the Product Catalog information and any Tweets associated with Product.
 
    ![](images/400/Picture50.png)
 
