@@ -73,7 +73,10 @@ Oracle Developer Cloud Service provides a complete development platform that str
 
     ![](images/100/SelfServ06.png)
 
-- Enter `DevCS` for the **Instance Name** and `DevCS Instance` for the **Description**, then click on **Next**.
+- Enter the following:
+    - **Instance Name**: `DevCS`
+    - **Description**: `DevCS Instance`
+    - **Notification Email**: Your account email should automatically show
 
     ![](images/100/SelfServ07.png)
 
@@ -83,15 +86,15 @@ Oracle Developer Cloud Service provides a complete development platform that str
 
     ![](images/100/SelfServ08.png)
 
-- The **DevCS** instance will show a Status of **Creating service...** for several minutes.
+- The **DevCS** instance will show a Status of **Creating service...** for some time as the software/image to support your developer cloud services is being started and configured.
 
     ![](images/100/SelfServ09.png)
 
-- Once the Instance is ready, it will show a **Created On** date. You can periodically click on the refresh icon to refresh the page.
+- Once the Instance is ready, it will show a **Created On** date. You can periodically click on the refresh icon to refresh the page. You can also click on the **Activity** tab to see log information. 
 
     ![](images/100/SelfServ10.png)
 
-- Click on the **Hamburger Menu** to the right of the DevCS Services, and then click on **Access Service Instance** to load the Developer Cloud Service Console. If you happen to receive a message saying that the **Page isn't working**, click on the **Reload** button.
+- Click on the **Hamburger Menu** to the right of the DevCS Services, and then click on **Access Service Instance** to load the Developer Cloud Service Console. If you happen to receive a message saying that the ***Page isn't working***, click on the **Reload** button.
 
     ![](images/100/SelfServ11.png)
 
@@ -141,11 +144,9 @@ In this step you are still assuming the identity of the Project Manager, ***Lisa
 
 ![](images/lisa.png)
 
-- Click **Issues** on left hand navigation panel to display the Track Issues page.
+- Click **Issues** on left hand navigation panel to display the Track Issues page. Click **New Issue**. Enter the following data in the New Issue page and click **Create Issue**.
 
     ![](images/100/Picture100-16.png)
-
-- Click **New Issue**. Enter the following data in the New Issue page and click **Create Issue**.
 
     **Note:** Throughout the lab you will assign your own account as the “physical” owner of the issue, but for the sake of this workshop, **Bala Gupta** will be the “logical” owner of the following issues.
 
@@ -324,7 +325,7 @@ In this step we are going to configure a server that can be used to perform the 
     ![](images/100/SelfServ19.png)
 
 - Return to the tab/window with the **New Configuration** dialog.
-    - In **Field 1. Service ID**, append the "`Storage-`" to the front of the **Cloud Account Name** - e.g. `Storage-myaccountname`.
+    - In **Field 1. Service ID**, ***append*** the word "`Storage-`" to the front of the **Cloud Account Name** - e.g. `Storage-myaccountname`.
     - In **Field 2. User Name**, copy and paste the **Buyer** email address. e.g. `myaccountname@me.com`.
     - In **Field 3. Password**, enter your account Password.
     - In **Field 4. Authorization URL**, copy and past the **Auth V1 Endpoint**
@@ -346,7 +347,7 @@ In this step we are going to configure a server that can be used to perform the 
 
     ![](images/100/SelfServ23.png)
 
-- The following dialog will be displayed, and we will fill in fields **1, 2 and 3** using data from the **Classic Compute** console.
+- The following dialog will be displayed, and we will fill in fields **1, 2, 3 and 4** using data from the **Classic Compute** console.
 
     ![](images/100/SelfServ26.png)
 
@@ -354,6 +355,10 @@ In this step we are going to configure a server that can be used to perform the 
 - We next need to go to the the **Classic Compute** Console. To get to that console, return to the tab/window with the **Storage Classic** dashboard. From that tab/window, click on the **Dashboard** icon on the top right corner of the screen.
 
     ![](images/100/SelfServ24.png)
+
+- From the main dashboard, click on the **Compute Classic** dashboard link.
+
+    ![](images/100/SelfServ41.png)
 
 - Use the information from this screen to fill in the **Configure Compute Account** dialog.
 
@@ -370,7 +375,7 @@ In this step we are going to configure a server that can be used to perform the 
 
 ### **STEP 14**: Create Builder Server Template
 
-- Before we create a New VM for the Build Server, we need to define a template that the build server(s) can use. Click on the **VM Templates** option in the Left Hand menu.
+- Before we create a New VM for the Build Server, we need to define a template that the build server(s) can use. Click on the **VM Templates** option in the Left Hand menu. If the **VM Templates** option _is not visible_, just reload this page.
 
     ![](images/100/SelfServ29.png)
 
@@ -386,7 +391,7 @@ In this step we are going to configure a server that can be used to perform the 
 
     ![](images/100/SelfServ32.png)
 
-- Click on **Node.JS v8.x** from the list of available software to add to this build image template. Notice that along with the version of Node.js that you just added, that this template already includes the **Required Build VM Components**, which includes Git, Java, JUnit, Maven, Ruby and Ant. Click on the **Done** button.
+- Click on **Node.JS v8.x** from the list of available software to add to this build image template. _Double check the version you selected_. Notice that along with the version of Node.js that you just added, that this template already includes the **Required Build VM Components**, which includes Git, Java, JUnit, Maven, Ruby and Ant. Click on the **Done** button.
 
     ![](images/100/SelfServ33.png)
 

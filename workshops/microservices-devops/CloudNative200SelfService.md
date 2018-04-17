@@ -30,8 +30,9 @@ In the first lab (100), the Project Manager created a new project in the Develop
 
 - This Lab assumes that you just completed Lab 100 and are still connected to the Oracle Cloud, that you're still in the Developer cloud Service Dashboard, and you're viewing the "Alpha Office Product Catalog Project". If for some reason that is not the case, follow the first several Steps of Lab 100 to once again view the Developer Cloud Service Console.
 
-    ![](images/200/Picture10.5.png)  
+    ![](images/200/Picture10.5.2.png)
 
+ 
 - Although you will remain connected to the Oracle Cloud using the user account you were provided, you will take on the Persona of ***Bala Gupta*** as you perform the following steps.
 
     ![](images/bala.png)  
@@ -96,7 +97,15 @@ Now that we have the source code in the Developer Cloud Service managed GIT repo
 
     ![](images/200/Picture20.png)  
 
-- In the New Job popup enter `TwitterFeedBuild` for the Job Name, click on **Create New**, select **OEL7NodeJava** from the Software template, and then click **Create Job**.
+- In the New Job popup enter the following:
+
+    **Job Name**: `TwitterFeedBuild`
+
+    Select **Create New**
+
+     **Software Template**: `OEL7NodeJava`
+
+    click **Create Job**.
 
     ![](images/200/PictureSelfServe01.png)  
 
@@ -112,7 +121,8 @@ Now that we have the source code in the Developer Cloud Service managed GIT repo
 
     ![](images/200/PictureSelfServe04.png)
 
-- Set the **Goals** to `clean assembly:assembly` and click on the **Post Build** tab.
+- Set the **Goals:** `clean assembly:assembly` 
+- Click on the **Post Build** tab.
 
     ![](images/200/PictureSelfServe05.png)
 
@@ -120,9 +130,13 @@ Now that we have the source code in the Developer Cloud Service managed GIT repo
 
     ![](images/200/PictureSelfServe06.png)
 
-- set the **Files to archive** field to `**/target/*`
-- Select **Archive Maven Artifacts**. 
-- Leave **Compression** set to **GZIP**.
+- Enter and set the following:
+
+    **Files to archive**: `**/target/*`
+
+    **Archive Maven Artifacts**. 
+
+    **Compression** set to **GZIP**.
 
     ![](images/200/PictureSelfServe07.png)
 
@@ -130,7 +144,8 @@ Now that we have the source code in the Developer Cloud Service managed GIT repo
 
     ![](images/200/PictureSelfServe08.png)
 
-- Leave the defaults of **Include JUnit XMLs** set to `**/surefire-reports/*.xml` and **Archive Media Files** selected.
+- Leave the defaults of **Include JUnit XMLs** set to: `**/surefire-reports/*.xml`
+- Select **Archive Media Files**.
 
     ![](images/200/PictureSelfServe09.png)
 
@@ -146,7 +161,7 @@ Now that we have the source code in the Developer Cloud Service managed GIT repo
 
     ![](images/200/PictureSelfServe13.png)
 
-- It can take about 15 minutes the first time the build image is used for start and provision the needed software. Once the status changes to **Building**, you can optionally click the **Build Log** button to view the build logs. 
+- It can take about 15 minutes the first time the build image is used, as the image must be started, and then the needed software is provisioned in the image. Once the status changes to **Building**, you can optionally click the **Build Log** button to view the build logs. 
 
     ![](images/200/PictureSelfServe14.png)
 
