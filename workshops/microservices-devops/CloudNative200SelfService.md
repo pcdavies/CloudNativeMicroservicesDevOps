@@ -260,18 +260,15 @@ Now that you have successfully built your project, you need to create a deployme
 
 ### **STEP 6**: Login to Oracle Application Container Cloud Service
 
-- Return to the tab where your **Main Cloud Dashboard** window is loaded. If your dashboard Window is not available, simply open a tab and go to cloud.oracle.com, and re-login as previously instructed. **Note:** for those using a Trial account, this is will be your Standard Identity Cloud Service based account/dashboard.
- 
+- Return to the tab containing the **Application Container Cloud** service you loaded off of the **main dashboard**. Click on the **Open Service Console** window.
 
-- Once the Oracle Public Cloud **Dashboard** is displayed, click on the  ![](images/200/PictureHamburger.png) menu in the upper left and select **Application Container** service. 
-
-    ![](images/200/Picture43.1.png)  
+    ![](images/200/PictureSelfServe37.png)  
 
 - On the Application Container Cloud Service (ACCS) Service Console you can view all the deployed applications, including our newly created **JavaTwitterMicroservice**. Click on the **URL**, and it will load a new browser tab. Alternatively, copy and paste the URL into the address bar of a new browser tab.
 
     ![](images/200/Picture44.png)  
 
-- _Append_ **/statictweets** to the end of the URL in the browser.
+- _Append_ the following to the end of the URL in the browser: `/statictweets`
 
     **Note:** The URL should return a JSON array containing a Static Twitter feed. If you desire to see a formatted view of the JSON, and you are using Chrome, open a new tab and search Google for **JSONViewer chrome plugin** – After you install the Chrome Plugin and re-submit the URL, you will be able to view the JSON in a more readable format.
 
@@ -321,7 +318,7 @@ Normally you would you an Integrated Development environment like Eclipse to upd
     ![](images/200/PictureSelfServe35.png)  
 
 
-- In the Change Progress popup click **OK**.
+- In the **Change Progress** popup click **OK**.
 
 
 - If you did not install Git as part of the **Trial Account** Student guide, there are many sites that you can visit to install GIT on your laptop. Visit [https://git-scm.com/downloads](https://git-scm.com/downloads) to download and install GIT for your operating system. In the examples to follow, we will use Windows cmd window to execute the git commands, but these examples will work equally as well on Windows or a Mac.
@@ -367,7 +364,7 @@ Normally you would you an Integrated Development environment like Eclipse to upd
     ```
     ![](images/200/PictureSelfServe26.png)  
 
-- In your editor of choice, located the lines that begin with **Remove this comment**. Removing these lines will cause the code between the comments to execute:
+- In your editor of choice, located the lines that begin with **Remove this comment**. Removing these lines will cause the code surrounded by the comments to execute:
 
     ![](images/200/PictureSelfServe27.png)  
 
@@ -382,7 +379,7 @@ Normally you would you an Integrated Development environment like Eclipse to upd
     ```
      ![](images/200/PictureSelfServe30.png)  
 
-- Search for the method **testGitStaticSearchTweets()** and remove the **Comment Lines** surronding that method. 
+- Search for the method **testGetStaticSearchTweets()** and remove the **Comment Lines** surrounding that method. 
 
      ![](images/200/PictureSelfServe31.png)  
 
@@ -422,7 +419,9 @@ Normally you would you an Integrated Development environment like Eclipse to upd
     ![](images/200/image093.6.png)  
 
 
-- Now that "Bala Gupta" has completed the task of adding the search filter, a **Merge Request** can be created by Bala and assigned to Lisa Jones. Click on **Merge Requests** on navigation panel and then click on the **New Merge Request** button.
+- Now that "Bala Gupta" has completed the task of adding the search filter, a **Merge Request** can be created by Bala and assigned to Lisa Jones. 
+
+- Click on **Merge Requests** on navigation panel and then click on the **New Merge Request** button.
 
     ![](images/200/image094.5.png)  
 
